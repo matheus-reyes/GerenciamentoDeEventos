@@ -1,44 +1,33 @@
--- *********************************************
--- * SQL MySQL generation                      
--- *--------------------------------------------
--- * DB-MAIN version: 11.0.1              
--- * Generator date: Dec  4 2018              
--- * Generation date: Fri Oct 30 10:26:03 2020 
--- * LUN file: C:\Users\marco\Desktop\Escolar\Materias\4°Semestre\BD\Trabalho_semestral\GerenciamentoDeEventos\bd\modelos\modelo_relacional.lun 
--- * Schema: Eventos-Cientificos/1 
--- ********************************************* 
-
-
--- Database Section
+-- Banco de Dados
 -- ________________ 
 
-create database Eventos-Cientificos;
-use Eventos-Cientificos;
+create database Eventos_Cientificos;
+use Eventos_Cientificos;
 
 
--- Tables Section
+-- Tabelas
 -- _____________ 
 
 create table APRESENTA (
-     cpf varchar(1) not null,
-     codigo_atividade varchar(1) not null,
+     cpf bigint not null,
+     codigo_atividade int not null,
      constraint ID_APRESENTA_ID primary key (codigo_atividade, cpf));
 
 create table APRESENTADO_EM (
-     DOI varchar(1) not null,
-     codigo_atividade varchar(1) not null,
+     DOI varchar(255) not null,
+     codigo_atividade int not null,
      constraint ID_APRESENTADO_EM_ID primary key (DOI, codigo_atividade));
 
 create table Artigo (
-     titulo varchar(1) not null,
-     DOI varchar(1) not null,
-     revista_publicacao varchar(1) not null,
+     titulo varchar(255) not null,
+     DOI varchar(255) not null,
+     revista_publicacao varchar(255) not null,
      id_comite int not null,
      constraint ID_Artigo_ID primary key (DOI));
 
 create table Atividade (
-     nome -- Compound attribute -- not null,
-     codigo_atividade varchar(1) not null,
+     nome varchar(255) not null,
+     codigo_atividade int not null auto_increment,
      id_evento int not null,
      Workshop varchar(1),
      Tutoria varchar(1),
@@ -50,118 +39,118 @@ create table Atividade (
      constraint ID_Atividade_ID primary key (codigo_atividade));
 
 create table Atividade_social (
-     codigo_atividade varchar(1) not null,
-     tipo varchar(1) not null,
-     valor_convite float(1) not null,
+     codigo_atividade int not null,
+     tipo varchar(255) not null,
+     valor_convite float not null,
      constraint ID_Ativi_Ativi_ID primary key (codigo_atividade));
 
 create table Autor_Artigo (
-     cpf varchar(1) not null,
-     minicurriculo char(1) not null,
+     cpf bigint not null,
+     minicurriculo varchar(255) not null,
      constraint ID_Autor_Parti_ID primary key (cpf));
 
 create table Avaliador (
-     cpf varchar(1) not null,
+     cpf bigint not null,
      constraint ID_Avali_Parti_ID primary key (cpf));
 
 create table Canal_informativo (
-     Id_canal int not null,
-     Nome varchar(1) not null,
-     URL varchar(1) not null,
-     Nome_caravana varchar(1) not null,
+     Id_canal int not null auto_increment,
+     Nome varchar(255) not null,
+     URL varchar(255) not null,
+     Nome_caravana varchar(255) not null,
      constraint ID_Canal_informativo_ID primary key (Id_canal));
 
 create table Caravana (
-     Nome_caravana varchar(1) not null,
+     Nome_caravana varchar(255) not null,
      Data_saida date not null,
      Data_chegada date not null,
      Id_local int not null,
      constraint ID_Caravana_ID primary key (Nome_caravana));
 
 create table Certificado (
-     titulo -- Compound attribute -- not null,
-     numero_certificado int not null,
-     cpf varchar(1) not null,
-     descricao varchar(1) not null,
+     titulo varchar(255) not null,
+     numero_certificado int not null auto_increment,
+     cpf bigint not null,
+     descricao varchar(255) not null,
      carga_horaria int not null,
      data_emissao date not null,
-     cnpj char(1) not null,
+     cnpj bigint not null,
      constraint ID_Certificado_ID primary key (numero_certificado),
      constraint SID_Certi_Parti_ID unique (cpf));
 
 create table Comite_Programa (
-     id_comite int not null,
+     id_comite int not null auto_increment,
      constraint ID_Comite_Programa_ID primary key (id_comite));
 
 create table COMPOE (
      id_comite int not null,
-     cpf varchar(1) not null,
+     cpf bigint not null,
      constraint ID_COMPOE_ID primary key (id_comite, cpf));
 
 create table Concurso (
-     codigo_atividade varchar(1) not null,
-     tema varchar(1) not null,
+     codigo_atividade int not null,
+     tema varchar(255) not null,
      constraint ID_Concu_Ativi_ID primary key (codigo_atividade));
 
 create table CONDUZ (
-     codigo_atividade varchar(1) not null,
-     cpf varchar(1) not null,
+     codigo_atividade int not null,
+     cpf bigint not null,
      constraint ID_CONDUZ_ID primary key (codigo_atividade, cpf));
 
 create table CONTRATA (
-     cpf varchar(1) not null,
+     cpf bigint not null,
      data_inicio date not null,
      data_fim date not null,
-     cnpj char(1) not null,
+     cnpj bigint not null,
      constraint ID_CONTR_Organ_ID primary key (cpf));
 
 create table Contrato (
-     id_contrato char(1) not null,
-     representante_evento char(1) not null,
-     representante_patrocinadora varchar(1) not null,
-     taxa_patrocinio float(1) not null,
-     plano_patrocinio varchar(1) not null,
+     id_contrato int not null auto_increment,
+     representante_evento varchar(255) not null,
+     representante_patrocinadora varchar(255) not null,
+     taxa_patrocinio float not null,
+     plano_patrocinio varchar(255) not null,
      data_inicio date not null,
-     data_fim char(1) not null,
-     cnpj char(1) not null,
-     C_O_cnpj char(1) not null,
+     data_fim date not null,
+     cnpj bigint not null,
+     C_O_cnpj bigint not null,
      constraint ID_Contrato_ID primary key (id_contrato));
 
 create table DIVULGA (
      Id_canal int not null,
-     cpf varchar(1) not null,
+     cpf bigint not null,
      constraint ID_DIVULGA_ID primary key (cpf, Id_canal));
 
 create table Entidade (
-     cnpj char(1) not null,
-     end_logradouro -- Compound attribute -- not null,
-     end_cidade varchar(1) not null,
-     end_estado varchar(1) not null,
-     end_cep varchar(1) not null,
-     end_numero varchar(1) not null,
-     nome_entidade varchar(1) not null,
-     email varchar(1) not null,
-     Promotora char(1),
-     Patrocinadora char(1),
-     Organizadora char(1),
+     cnpj bigint not null,
+     end_logradouro varchar(255) not null,
+     end_cidade varchar(255) not null,
+     end_estado varchar(255) not null,
+     end_cep varchar(255) not null,
+     end_numero varchar(255) not null,
+     nome_entidade varchar(255) not null,
+     email varchar(255) not null,
+     Promotora varchar(1),
+     Patrocinadora varchar(1),
+     Organizadora varchar(1),
      constraint ID_Entidade_ID primary key (cnpj));
 
 create table Equipamento (
-     nome varchar(1) not null,
-     codigo_equipamento int not null,
-     valor float(1) not null,
+     nome varchar(255) not null,
+     codigo_equipamento int not null auto_increment,
+     valor float not null,
      codigo_local int not null,
      constraint ID_Equipamento_ID primary key (codigo_equipamento));
 
 create table Evento (
-     tema varchar(1) not null,
-     id_evento int not null,
-     edicao int not null,
-     nome varchar(1) not null,
+     tema varchar(255) not null,
+     id_evento int not null auto_increment,
+     edicao tinyint not null,
+     nome varchar(255) not null,
      data_inicio date not null,
      data_fim date not null,
-     cnpj char(1) not null,
-     PRO_cnpj char(1) not null,
+     cnpj bigint not null,
+     PRO_cnpj bigint not null,
      constraint ID_Evento_ID primary key (id_evento));
 
 create table FAZ_LOCACAO (
@@ -169,161 +158,161 @@ create table FAZ_LOCACAO (
      id_evento int not null,
      data_inicio date not null,
      data_fim date not null,
-     valor float(1) not null,
+     valor float not null,
      id_local int not null,
      constraint ID_FAZ_LOCACAO_ID primary key (id_contrato),
      constraint SID_FAZ_L_Event_ID unique (id_evento));
 
 create table INGRESSO (
-     numero_ingresso int not null,
-     numero_lote char(1) not null,
+     numero_ingresso int not null auto_increment,
+     numero_lote tinyint not null,
      data date not null,
-     desconto float(1) not null,
-     forma_pagamento char(1) not null,
-     cpf varchar(1) not null,
+     desconto float not null,
+     forma_pagamento varchar(255) not null,
+     cpf bigint not null,
      id_evento int not null,
      constraint ID_INGRESSO_ID primary key (numero_ingresso),
      constraint SID_INGRE_Lote_ID unique (numero_lote));
 
 create table INSCREVE (
-     codigo_atividade varchar(1) not null,
-     cpf varchar(1) not null,
+     codigo_atividade int not null,
+     cpf bigint not null,
      constraint ID_INSCREVE_ID primary key (codigo_atividade, cpf));
 
 create table Instrutor (
-     cpf varchar(1) not null,
+     cpf bigint not null,
      constraint ID_Instr_Parti_ID primary key (cpf));
 
 create table JULGA (
-     codigo_atividade varchar(1) not null,
-     cpf varchar(1) not null,
+     codigo_atividade int not null,
+     cpf bigint not null,
      constraint ID_JULGA_ID primary key (codigo_atividade, cpf));
 
 create table Local (
-     nome varchar(1) not null,
-     id_local int not null,
-     valor_locacao float(1) not null,
-     Local_online int,
-     Local_presencial int,
+     nome varchar(255) not null,
+     id_local int not null auto_increment,
+     valor_locacao float not null,
+     Local_online varchar(1),
+     Local_presencial varchar(1),
      constraint ID_Local_ID primary key (id_local));
 
 create table Local_atividade (
-     nome varchar(1) not null,
+     nome varchar(255) not null,
      capacidade int not null,
-     codigo_local int not null,
+     codigo_local int not null auto_increment,
      id_local int not null,
      constraint ID_Local_atividade_ID primary key (codigo_local));
 
 create table Local_online (
      id_local int not null,
-     url varchar(1) not null,
+     url varchar(255) not null,
      constraint ID_Local_Local_1_ID primary key (id_local));
 
 create table Local_origem (
-     Id_local int not null,
-     Logradouro varchar(1) not null,
-     Cidade varchar(1) not null,
-     Estado varchar(1) not null,
+     Id_local int not null auto_increment,
+     Logradouro varchar(255) not null,
+     Cidade varchar(255) not null,
+     Estado varchar(255) not null,
      CEP int not null,
-     Numero int not null,
+     Numero varchar(255) not null,
      constraint ID_Local_origem_ID primary key (Id_local));
 
 create table Local_presencial (
      id_local int not null,
-     end_logradouro varchar(1) not null,
-     end_cidade varchar(1) not null,
-     end_estado varchar(1) not null,
-     end_cep varchar(1) not null,
-     end_numero varchar(1) not null,
+     end_logradouro varchar(255) not null,
+     end_cidade varchar(255) not null,
+     end_estado varchar(255) not null,
+     end_cep varchar(255) not null,
+     end_numero varchar(255) not null,
      capacidade int not null,
-     area float(1) not null,
+     area float not null,
      constraint ID_Local_Local_ID primary key (id_local));
 
 create table Lote (
-     numero_lote char(1) not null,
-     valor float(1) not null,
+     numero_lote tinyint not null,
+     valor float not null,
      constraint ID_Lote_ID primary key (numero_lote));
 
 create table MINISTRA (
-     codigo_atividade varchar(1) not null,
-     cpf varchar(1) not null,
+     codigo_atividade int not null,
+     cpf bigint not null,
      constraint ID_MINISTRA_ID primary key (codigo_atividade, cpf));
 
 create table Ministrante_tutoria (
-     cpf varchar(1) not null,
-     afiliacao char(1) not null,
-     minicurriculo char(1) not null,
+     cpf bigint not null,
+     afiliacao varchar(255) not null,
+     minicurriculo varchar(255) not null,
      constraint ID_Minis_Parti_ID primary key (cpf));
 
 create table Mobilizador_caravana (
-     CPF int not null,
-     Nome varchar(1) not null,
+     CPF bigint not null,
+     Nome varchar(255) not null,
      Telefone int not null,
      CEP int not null,
-     Nome_caravana varchar(1) not null,
-     cnpj char(1) not null,
+     Nome_caravana varchar(255) not null,
+     cnpj bigint not null,
      Id_canal int not null,
      constraint ID_Mobilizador_caravana_ID primary key (CPF));
 
 create table Movimentacao_Financeira (
-     tipo varchar(1) not null,
-     descricao varchar(1) not null,
-     codigo_movimentacao int not null,
-     valor_a_pagar float(1) not null,
+     tipo varchar(255) not null,
+     descricao varchar(500) not null,
+     codigo_movimentacao int not null auto_increment,
+     valor_a_pagar float not null,
      quantidade int not null,
      id_evento int not null,
      constraint ID_Movimentacao_Financeira_ID primary key (codigo_movimentacao));
 
 create table Nota_Fiscal (
-     numero_nota int not null,
+     numero_nota int not null auto_increment,
      codigo_movimentacao int not null,
-     cnpj_emissor varchar(1) not null,
-     nome_razao_social varchar(1) not null,
-     inscricao_municipal varchar(1) not null,
-     codigo_verificacao varchar(1) not null,
-     valor float(1) not null,
+     cnpj_emissor bigint not null,
+     nome_razao_social varchar(255) not null,
+     inscricao_municipal varchar(255) not null,
+     codigo_verificacao varchar(255) not null,
+     valor float not null,
      data_emissao date not null,
      constraint ID_Nota_Fiscal_ID primary key (numero_nota),
      constraint SID_Nota__Movim_ID unique (codigo_movimentacao));
 
 create table ORGANIZA (
-     codigo_atividade varchar(1) not null,
-     cpf varchar(1) not null,
+     codigo_atividade int not null,
+     cpf bigint not null,
      constraint ID_ORGANIZA_ID primary key (codigo_atividade, cpf));
 
 create table Organizador (
-     cpf varchar(1) not null,
-     remuneracao float(1) not null,
-     carga_horaria float(1) not null,
-     COO_CPF int not null,
+     cpf bigint not null,
+     remuneracao float not null,
+     carga_horaria float not null,
+     COO_CPF bigint not null,
      constraint ID_Organ_Parti_ID primary key (cpf));
 
 create table Organizadora (
-     cnpj char(1) not null,
+     cnpj bigint not null,
      constraint ID_Organ_Entid_ID primary key (cnpj));
 
 create table Ouvinte (
-     cpf varchar(1) not null,
+     cpf bigint not null,
      constraint ID_Ouvin_Parti_ID primary key (cpf));
 
 create table Palestra (
-     codigo_atividade varchar(1) not null,
-     descricao varchar(1) not null,
-     publico_alvo varchar(1) not null,
+     codigo_atividade int not null,
+     descricao varchar(500) not null,
+     publico_alvo varchar(255) not null,
      constraint ID_Pales_Ativi_ID primary key (codigo_atividade));
 
 create table Palestrante (
-     cpf varchar(1) not null,
-     filiacao varchar(1) not null,
-     minicurriculo varchar(1) not null,
+     cpf bigint not null,
+     filiacao varchar(255) not null,
+     minicurriculo varchar(255) not null,
      constraint ID_Pales_Parti_ID primary key (cpf));
 
 create table Participante (
-     nome -- Compound attribute -- not null,
-     cpf varchar(1) not null,
-     cep varchar(1) not null,
-     e_mail varchar(1) not null,
-     telefone varchar(1) not null,
+     nome varchar(255) not null,
+     cpf bigint not null,
+     cep int not null,
+     e_mail varchar(255) not null,
+     telefone int not null,
      Staff varchar(1),
      Palestrante varchar(1),
      Ouvinte varchar(1),
@@ -335,125 +324,125 @@ create table Participante (
      constraint ID_Participante_ID primary key (cpf));
 
 create table Participante_caravana (
-     cpf varchar(1) not null,
-     Valor_passagem float(1) not null,
-     Nome_caravana varchar(1) not null,
+     cpf bigint not null,
+     Valor_passagem float not null,
+     Nome_caravana varchar(255) not null,
      constraint FKPar_Par_ID primary key (cpf));
 
 create table participantes_concurso (
-     codigo_atividade varchar(1) not null,
-     nome_participante varchar(1) not null,
+     codigo_atividade int not null,
+     nome_participante varchar(255) not null,
      constraint ID_participantes_concurso_ID primary key (codigo_atividade, nome_participante));
 
 create table participantes_reuniao (
-     codigo_atividade varchar(1) not null,
-     nome_participante varchar(1) not null,
+     codigo_atividade int not null,
+     nome_participante varchar(255) not null,
      constraint ID_participantes_reuniao_ID primary key (codigo_atividade, nome_participante));
 
 create table PATROCINA (
-     cnpj char(1) not null,
+     cnpj bigint not null,
      id_evento int not null,
      constraint ID_PATROCINA_ID primary key (id_evento, cnpj));
 
 create table Patrocinadora (
-     cnpj char(1) not null,
+     cnpj bigint not null,
      constraint ID_Patro_Entid_ID primary key (cnpj));
 
 create table premiacao_concurso (
-     codigo_atividade varchar(1) not null,
-     premio varchar(1) not null,
+     codigo_atividade int not null,
+     premio varchar(255) not null,
      colocacao int not null,
      constraint ID_premiacao_concurso_ID primary key (codigo_atividade, premio, colocacao));
 
 create table Promotora (
-     cnpj char(1) not null,
+     cnpj bigint not null,
      constraint ID_Promo_Entid_ID primary key (cnpj));
 
 create table PUBLICA (
-     cpf varchar(1) not null,
-     DOI varchar(1) not null,
+     cpf bigint not null,
+     DOI varchar(255) not null,
      constraint ID_PUBLICA_ID primary key (DOI, cpf));
 
 create table Rede_Social (
-     nome varchar(1) not null,
-     url varchar(1) not null,
-     usuario varchar(1) not null,
+     nome varchar(255) not null,
+     url varchar(255) not null,
+     usuario varchar(255) not null,
      id_evento int not null,
-     cnpj char(1) not null,
+     cnpj bigint not null,
      constraint ID_Rede_Social_ID primary key (url));
 
 create table regras_concurso (
-     codigo_atividade varchar(1) not null,
-     regra varchar(1) not null,
+     codigo_atividade int not null,
+     regra varchar(255) not null,
      constraint ID_regras_concurso_ID primary key (codigo_atividade, regra));
 
 create table REPRESENTA (
-     cnpj char(1) not null,
-     cpf_representante varchar(1) not null,
+     cnpj bigint not null,
+     cpf_representante bigint not null,
      constraint ID_REPRESENTA_ID primary key (cpf_representante, cnpj));
 
 create table Representante (
-     cpf_representante varchar(1) not null,
-     nome varchar(1) not null,
-     email varchar(1) not null,
-     telefone varchar(1) not null,
+     cpf_representante bigint not null,
+     nome varchar(255) not null,
+     email varchar(255) not null,
+     telefone int not null,
      constraint ID_Representante_ID primary key (cpf_representante));
 
 create table Reuniao (
-     codigo_atividade varchar(1) not null,
-     objetivo varchar(1) not null,
+     codigo_atividade int not null,
+     objetivo varchar(500) not null,
      constraint ID_Reuni_Ativi_ID primary key (codigo_atividade));
 
 create table Sessao (
      data_inicio date not null,
      data_fim date not null,
-     codigo_atividade varchar(1) not null,
+     codigo_atividade int not null,
      codigo_local int not null,
      constraint ID_Sessao primary key (codigo_atividade),
      constraint SID_Sessao_ID unique (data_inicio));
 
 create table Sessao_artigo (
-     codigo_atividade varchar(1) not null,
-     tipo -- Compound attribute -- not null,
+     codigo_atividade int not null,
+     tipo varchar(255) not null,
      numero_sessoes int not null,
-     responsavel varchar(1) not null,
+     responsavel varchar(255) not null,
      constraint ID_Sessa_Ativi_ID primary key (codigo_atividade));
 
 create table Staff (
-     cpf varchar(1) not null,
+     cpf bigint not null,
      constraint ID_Staff_Parti_ID primary key (cpf));
 
 create table tipo_participante (
      numero_certificado int not null,
-     tipo_participante char(1) not null,
+     tipo_participante char(255) not null,
      constraint ID_tipo_participante_ID primary key (numero_certificado, tipo_participante));
 
 create table Tutoria (
-     codigo_atividade varchar(1) not null,
-     valor_inscricao float(1) not null,
-     tema varchar(1) not null,
-     publico_alvo varchar(1) not null,
+     codigo_atividade int not null,
+     valor_inscricao float not null,
+     tema varchar(255) not null,
+     publico_alvo varchar(255) not null,
      constraint ID_Tutor_Ativi_ID primary key (codigo_atividade));
 
 create table UTILIZA (
-     codigo_atividade varchar(1) not null,
+     codigo_atividade int not null,
      codigo_equipamento int not null,
      quantidade int not null,
      constraint ID_UTILIZA_ID primary key (codigo_equipamento, codigo_atividade));
 
 create table Veiculo (
-     Codigo_veiculo int not null,
-     Tipo varchar(1) not null,
-     Valor_passagem char(1) not null,
-     Nome_companhia varchar(1) not null,
-     Nome_caravana varchar(1) not null,
+     Codigo_veiculo int not null auto_increment,
+     Tipo varchar(255) not null,
+     Valor_passagem float not null,
+     Nome_companhia varchar(255) not null,
+     Nome_caravana varchar(255) not null,
      constraint ID_Veiculo_ID primary key (Codigo_veiculo));
 
 create table Workshop (
-     codigo_atividade varchar(1) not null,
-     valor_inscricao float(1) not null,
-     tema varchar(1) not null,
-     publico_alvo varchar(1) not null,
+     codigo_atividade int not null,
+     valor_inscricao float not null,
+     tema varchar(255) not null,
+     publico_alvo varchar(255) not null,
      constraint ID_Works_Ativi_ID primary key (codigo_atividade));
 
 
@@ -1384,4 +1373,3 @@ create index FKTRANSPORTA_IND
 
 create unique index ID_Works_Ativi_IND
      on Workshop (codigo_atividade);
-
