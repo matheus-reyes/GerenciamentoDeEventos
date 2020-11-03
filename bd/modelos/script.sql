@@ -1373,3 +1373,4 @@ create index FKTRANSPORTA_IND
 
 create unique index ID_Works_Ativi_IND
      on Workshop (codigo_atividade);
+     
