@@ -4,7 +4,6 @@
 create database Eventos_Cientificos;
 use Eventos_Cientificos;
 
-
 -- Tabelas
 -- _____________ 
 
@@ -29,13 +28,7 @@ create table Atividade (
      nome varchar(255) not null,
      codigo_atividade int not null auto_increment,
      id_evento int not null,
-     Workshop varchar(1),
-     Tutoria varchar(1),
-     Sessao_artigo varchar(1),
-     Reuniao varchar(1),
-     Palestra varchar(1),
-     Concurso varchar(1),
-     Atividade_social varchar(1),
+     tipo_atividade varchar(100),
      constraint ID_Atividade_ID primary key (codigo_atividade));
 
 create table Atividade_social (
@@ -130,9 +123,9 @@ create table Entidade (
      end_numero varchar(255) not null,
      nome_entidade varchar(255) not null,
      email varchar(255) not null,
-     Promotora varchar(1),
-     Patrocinadora varchar(1),
-     Organizadora varchar(1),
+     Promotora boolean,
+     Patrocinadora boolean,
+     Organizadora boolean,
      constraint ID_Entidade_ID primary key (cnpj));
 
 create table Equipamento (
@@ -192,8 +185,8 @@ create table Local (
      nome varchar(255) not null,
      id_local int not null auto_increment,
      valor_locacao float not null,
-     Local_online varchar(1),
-     Local_presencial varchar(1),
+     Local_online boolean,
+     Local_presencial boolean,
      constraint ID_Local_ID primary key (id_local));
 
 create table Local_atividade (
@@ -313,14 +306,14 @@ create table Participante (
      cep int not null,
      e_mail varchar(255) not null,
      telefone int not null,
-     Staff varchar(1),
-     Palestrante varchar(1),
-     Ouvinte varchar(1),
-     Organizador varchar(1),
-     Ministrante_tutoria varchar(1),
-     Instrutor varchar(1),
-     Avaliador varchar(1),
-     Autor_Artigo varchar(1),
+     Staff boolean,
+     Palestrante boolean,
+     Ouvinte boolean,
+     Organizador boolean,
+     Ministrante_tutoria boolean,
+     Instrutor boolean,
+     Avaliador boolean,
+     Autor_Artigo boolean,
      constraint ID_Participante_ID primary key (cpf));
 
 create table Participante_caravana (
