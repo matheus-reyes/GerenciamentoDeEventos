@@ -28,7 +28,7 @@ create table Atividade (
      nome varchar(255) not null,
      codigo_atividade int not null auto_increment,
      id_evento int not null,
-     tipo_atividade varchar(100),
+     tipo_atividade varchar(100) not null,
      constraint ID_Atividade_ID primary key (codigo_atividade));
 
 create table Atividade_social (
@@ -481,15 +481,6 @@ alter table Artigo add constraint EQU_Artig_Comit_FK
 -- alter table Atividade add constraint ID_Atividade_CHK
 --     check(exists(select * from ORGANIZA
 --                  where ORGANIZA.codigo_atividade = codigo_atividade)); 
-
-alter table Atividade add constraint EXTONE_Atividade
-     check((Atividade_social is not null and Concurso is null and Sessao_artigo is null and Reuniao is null and Tutoria is null and Workshop is null and Palestra is null)
-           or (Atividade_social is null and Concurso is not null and Sessao_artigo is null and Reuniao is null and Tutoria is null and Workshop is null and Palestra is null)
-           or (Atividade_social is null and Concurso is null and Sessao_artigo is not null and Reuniao is null and Tutoria is null and Workshop is null and Palestra is null)
-           or (Atividade_social is null and Concurso is null and Sessao_artigo is null and Reuniao is not null and Tutoria is null and Workshop is null and Palestra is null)
-           or (Atividade_social is null and Concurso is null and Sessao_artigo is null and Reuniao is null and Tutoria is not null and Workshop is null and Palestra is null)
-           or (Atividade_social is null and Concurso is null and Sessao_artigo is null and Reuniao is null and Tutoria is null and Workshop is not null and Palestra is null)
-           or (Atividade_social is null and Concurso is null and Sessao_artigo is null and Reuniao is null and Tutoria is null and Workshop is null and Palestra is not null)); 
 
 alter table Atividade add constraint EQU_Ativi_Event_FK
      foreign key (id_evento)
