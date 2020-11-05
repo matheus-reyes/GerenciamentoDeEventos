@@ -55,6 +55,10 @@ INSERT INTO sessao_artigo (codigo_atividade, tipo, numero_sessoes, responsavel) 
 
 /* Inserção Dados comite */
 INSERT INTO comite_programa(id_comite) VALUES (1);
+INSERT INTO comite_programa(id_comite) VALUES (2);
+INSERT INTO comite_programa(id_comite) VALUES (3);
+INSERT INTO comite_programa(id_comite) VALUES (4);
+INSERT INTO comite_programa(id_comite) VALUES (5);
 
 /* Inserção Dados artigo */
 
@@ -82,6 +86,8 @@ INSERT INTO atividade (nome, id_evento, tipo_atividade) VALUES ("Workshop: merca
 
 /* Inserção workshop */
 
+INSERT INTO workshop (codigo_atividade, valor_inscricao, tema, publico_alvo) VALUES (21, 250, "Como ter uma alimentação saudável atualmente", "Geral");
+INSERT INTO workshop (codigo_atividade, valor_inscricao, tema, publico_alvo) VALUES (22, 120, "Como declarar o imposto de renda", "Adultos");
 INSERT INTO workshop (codigo_atividade, valor_inscricao, tema, publico_alvo) VALUES (23, 250, "Imersão na inteligência Artificial", "Cientistas de dados");
 INSERT INTO workshop (codigo_atividade, valor_inscricao, tema, publico_alvo) VALUES (24, 120, "IoT na modernidade", "Adultos");
 INSERT INTO workshop (codigo_atividade, valor_inscricao, tema, publico_alvo) VALUES (25, 150, "Soft skills para o mercado em TI", "Geral");
@@ -168,3 +174,10 @@ INSERT INTO atividade (nome, id_evento, tipo_atividade) VALUES ("Perspectivas te
 INSERT INTO atividade (nome, id_evento, tipo_atividade) VALUES ("O imapcto dos dados nas decisões corporativas", 2, "palestra");
 INSERT INTO atividade (nome, id_evento, tipo_atividade) VALUES ("Visão computacional", 2, "palestra");
 
+/* Inserção Palestra */
+
+INSERT INTO palestra (codigo_atividade, descricao, publico_alvo) VALUES (36, "A relação do agronegócio e da alimentação saudável", "Geral");
+INSERT INTO palestra (codigo_atividade, descricao, publico_alvo) VALUES (37, "Mudanças nas tecnologias atuais", "Computação");
+INSERT INTO palestra (codigo_atividade, descricao, publico_alvo) VALUES (38, "Previsões das tecnologias do futuro", "Computação");
+INSERT INTO palestra (codigo_atividade, descricao, publico_alvo) VALUES (39, "Dados no mundo corporativo", "Cientistas de Dados");
+INSERT INTO palestra (codigo_atividade, descricao, publico_alvo) VALUES (40, "Visão na Computação", "Computação");
