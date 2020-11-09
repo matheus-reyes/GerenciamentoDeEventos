@@ -1,7 +1,7 @@
 -- Banco de Dados
 -- ________________ 
 
-create database Eventos_Cientificos;
+-- create database Eventos_Cientificos;
 use Eventos_Cientificos;
 
 -- Tabelas
@@ -244,6 +244,7 @@ create table Mobilizador_caravana (
      CEP int not null,
      Nome_caravana varchar(255) not null,
      cnpj bigint not null,
+     COO_CPF bigint not null,
      Id_canal int not null,
      constraint ID_Mobilizador_caravana_ID primary key (CPF));
 
@@ -277,7 +278,6 @@ create table Organizador (
      cpf bigint not null,
      remuneracao float not null,
      carga_horaria float not null,
-     COO_CPF bigint not null,
      constraint ID_Organ_Parti_ID primary key (cpf));
 
 create table Organizadora (
@@ -770,6 +770,10 @@ alter table Ministrante_tutoria add constraint ID_Minis_Parti_FK
      foreign key (cpf)
      references Participante (cpf);
 
+alter table Mobilizador_caravana add constraint FKCOORDENA_FK
+     foreign key (COO_CPF)
+     references Organizador (CPF);
+
 alter table Mobilizador_caravana add constraint FKResponsavel_por_FK
      foreign key (Nome_caravana)
      references Caravana (Nome_caravana);
@@ -816,10 +820,6 @@ alter table ORGANIZA add constraint EQU_ORGAN_Ativi
 alter table Organizador add constraint ID_Organ_Parti_FK
      foreign key (cpf)
      references Participante (cpf);
-
-alter table Organizador add constraint FKCOORDENA_FK
-     foreign key (COO_CPF)
-     references Mobilizador_caravana (CPF);
 
 -- Not implemented
 -- alter table Organizadora add constraint ID_Organ_Entid_CHK
@@ -1248,7 +1248,7 @@ create unique index ID_Organ_Parti_IND
      on Organizador (cpf);
 
 create index FKCOORDENA_IND
-     on Organizador (COO_CPF);
+     on Mobilizador_caravana (COO_CPF);
 
 create unique index ID_Organ_Entid_IND
      on Organizadora (cnpj);
