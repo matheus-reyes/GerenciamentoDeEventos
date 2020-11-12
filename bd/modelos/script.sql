@@ -1,7 +1,7 @@
 -- Banco de Dados
 -- ________________ 
 
--- create database Eventos_Cientificos;
+create database Eventos_Cientificos;
 use Eventos_Cientificos;
 
 -- Tabelas

@@ -74,14 +74,6 @@ VALUES ("Edmundo Silva", 43269456719, 34504249, "edmundo@contato.com", 458490949
 INSERT INTO participante (nome, cpf, cep, e_mail, telefone, Staff, Palestrante, Ouvinte, Organizador, Ministrante_tutoria, Instrutor, Avaliador, Autor_Artigo) 
 VALUES ("Felipe Pereira", 43269456720, 34504250, "felipe@contato.com", 458490950, false, false, false, true, false, false, false, false);
 
-/* Inserção Dados Organizador */
-
-INSERT INTO organizador (cpf, remuneracao, carga_horaria, COO_CPF) VALUES (43269456716, 7.00, 8.00, NULL);
-INSERT INTO organizador (cpf, remuneracao, carga_horaria, COO_CPF) VALUES (43269456717, 7.00, 8.00, NULL);
-INSERT INTO organizador (cpf, remuneracao, carga_horaria, COO_CPF) VALUES (43269456718, 7.00, 8.00, NULL);
-INSERT INTO organizador (cpf, remuneracao, carga_horaria, COO_CPF) VALUES (43269456719, 7.00, 8.00, NULL);
-INSERT INTO organizador (cpf, remuneracao, carga_horaria, COO_CPF) VALUES (43269456720, 7.00, 8.00, NULL);
-
 /* Inserção Dados Participante - Ministrante_tutoria */
 
 INSERT INTO participante (nome, cpf, cep, e_mail, telefone, Staff, Palestrante, Ouvinte, Organizador, Ministrante_tutoria, Instrutor, Avaliador, Autor_Artigo) 
