@@ -317,7 +317,7 @@ INSERT INTO tutoria (codigo_atividade, valor_inscricao, tema, publico_alvo)  VAL
 INSERT INTO atividade (nome, id_evento, tipo_atividade) VALUES ("Palestra: agronegócio e alimentação saudavel", 1, "palestra");
 INSERT INTO atividade (nome, id_evento, tipo_atividade) VALUES ("Palestra: mudanças tecnológicas", 2, "palestra");
 INSERT INTO atividade (nome, id_evento, tipo_atividade) VALUES ("Perspectivas tecnológicas para o futuro", 2, "palestra");
-INSERT INTO atividade (nome, id_evento, tipo_atividade) VALUES ("O imapcto dos dados nas decisões corporativas", 2, "palestra");
+INSERT INTO atividade (nome, id_evento, tipo_atividade) VALUES ("O impacto dos dados nas decisões corporativas", 2, "palestra");
 INSERT INTO atividade (nome, id_evento, tipo_atividade) VALUES ("Visão computacional", 2, "palestra");
 
 /* Inserção Palestra */
