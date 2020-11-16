@@ -27,12 +27,12 @@
     <!-- Main -->
     <main>
         <section>
-            <h2 class="text-center titulo"> Cadastro </h2>
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-lg-5">
-                        <!-- Formulário Login -->
-                        <form action="" method="POST">
+                    <div class="col-lg-6">
+                        <h2 class="text-center titulo"> Cadastro Participante </h2>
+                        <!-- Formulário Cadastro Participante -->
+                        <form action="/cadastroParticipante" method="POST">
                             <!-- Input Nome -->
                             <div class="form-group row mb-0">
                                 <label for="nome" class="col-sm-12 col-form-label"></label>
@@ -82,17 +82,99 @@
                                     <input type="password" class="form-control" id="confirmpassword" name="confirmpassword" placeholder="Confirme sua senha">
                                 </div>
                             </div>
-                            <br/>
                             <!-- Botão de Login -->
                             <div class="form-group row">
                                 <div class="col-md-12 text-center">
-                                    <button type="submit" class="btn w-100 botao">Login</button>
+                                    <button type="submit" class="btn w-100 botao"> Cadastrar </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-lg-6">
+                        <h2 class="text-center titulo"> Cadastro Promotora </h2>
+                        <!-- Formulário Cadastro Promotora -->
+                        <form action="/cadastroPromotora" method="POST">
+                            <!-- Input CNPJ -->
+                            <div class="form-group row mb-0">
+                                <label for="cnpj" class="col-sm-12 col-form-label"></label>
+                                <div class="col-md-12">
+                                    <input type="text" class="form-control" id="cnpj" name="cnpj" placeholder="Digite o CNPJ">
+                                </div>
+                            </div>
+                            <!-- Input Nome Empresa -->
+                            <div class="form-group row mb-0">
+                                <label for="nomeEmpresa" class="col-sm-12 col-form-label"></label>
+                                <div class="col-md-12">
+                                    <input type="text" class="form-control" id="nomeEmpresa" name="nomeEmpresa" placeholder="Digite o nome da Empresa">
+                                </div>
+                            </div>
+                            <!-- Input Estado -->
+                            <div class="form-group row mb-0">
+                                <label for="estado" class="col-sm-12 col-form-label"></label>
+                                <div class="col-md-12">
+                                    <input type="text" class="form-control" id="estado" name="estado" placeholder="Digite o estado">
+                                </div>
+                            </div>
+                            <!-- Input Cidade -->
+                            <div class="form-group row mb-0">
+                                <label for="cidade" class="col-sm-12 col-form-label"></label>
+                                <div class="col-md-12">
+                                    <input type="text" class="form-control" id="cidade" name="cidade" placeholder="Digite a cidade">
+                                </div>
+                            </div>
+                            <!-- Input CEP Empresa -->
+                            <div class="form-group row mb-0">
+                                <label for="cepEmpresa" class="col-sm-12 col-form-label"></label>
+                                <div class="col-md-12">
+                                    <input type="text" class="form-control" id="cepEmpresa" name="cepEmpresa" placeholder="Digite o CEP">
+                                </div>
+                            </div>
+                            <!-- Input logradouro Empresa -->
+                            <div class="form-group row mb-0">
+                                <label for="logradouroEmpresa" class="col-sm-12 col-form-label"></label>
+                                <div class="col-md-12">
+                                    <input type="text" class="form-control" id="logradouroEmpresa" name="logradouroEmpresa" placeholder="Digite o Logradouro">
+                                </div>
+                            </div>
+                            <!-- Input número Empresa -->
+                            <div class="form-group row mb-0">
+                                <label for="numeroEmpresa" class="col-sm-12 col-form-label"></label>
+                                <div class="col-md-12">
+                                    <input type="text" class="form-control" id="numeroEmpresa" name="numeroEmpresa" placeholder="Digite o Número">
+                                </div>
+                            </div>
+                            <!-- Input E-mail -->
+                            <div class="form-group row mb-0">
+                                <label for="email" class="col-sm-12 col-form-label"></label>
+                                <div class="col-md-12">
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="Digite seu e-mail">
+                                </div>
+                            </div>
+                            <!-- Input Senha -->
+                            <div class="form-group row mb-0">
+                                <label for="password" class="col-sm-12 col-form-label"></label>
+                                <div class="col-md-12">
+                                    <input type="password" class="form-control" id="password" name="password" placeholder="Digite sua senha">
+                                </div>
+                            </div>
+                            <!-- Input Confirmar Senha -->
+                            <div class="form-group row">
+                                <label for="confirmpassword" class="col-sm-12 col-form-label"></label>
+                                <div class="col-md-12">
+                                    <input type="password" class="form-control" id="confirmpassword" name="confirmpassword" placeholder="Confirme sua senha">
+                                </div>
+                            </div>
+                            <!-- Botão de Login -->
+                            <div class="form-group row">
+                                <div class="col-md-12 text-center">
+                                    <button type="submit" class="btn w-100 botao"> Cadastrar </button>
                                 </div>
                             </div>
                         </form>
                     </div>
                 </div>  
             </div>
+        </section>
     </main>
     <script type="text/javascript" src="javascripts/jquery.js"></script>
     <script type="text/javascript" src="javascripts/bootstrap.js"></script>
