@@ -835,6 +835,15 @@ INSERT INTO organizador (cpf, remuneracao, carga_horaria) VALUES
     (43269456719, 720.00, 8.00),
     (43269456720, 725.00, 8.00);
 
+INSERT INTO organizador (cpf, remuneracao, carga_horaria) VALUES 
+    (43269456731, 720.00, 8.00),
+    (43269456733, 720.00, 8.00),
+    (43269456734, 720.00, 8.00);
+    
+UPDATE participante
+set organizador = 1
+where cpf IN (43269456730, 43269456731, 43269456733, 43269456734);
+
 /*Contrata: relacao entre Organizadora e organizador*/
 
 INSERT INTO contrata (cpf, data_inicio, data_fim, cnpj) VALUES 
