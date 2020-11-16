@@ -317,7 +317,7 @@ INSERT INTO tutoria (codigo_atividade, valor_inscricao, tema, publico_alvo)  VAL
 INSERT INTO atividade (nome, id_evento, tipo_atividade) VALUES ("Palestra: agronegócio e alimentação saudavel", 1, "palestra");
 INSERT INTO atividade (nome, id_evento, tipo_atividade) VALUES ("Palestra: mudanças tecnológicas", 2, "palestra");
 INSERT INTO atividade (nome, id_evento, tipo_atividade) VALUES ("Perspectivas tecnológicas para o futuro", 2, "palestra");
-INSERT INTO atividade (nome, id_evento, tipo_atividade) VALUES ("O imapcto dos dados nas decisões corporativas", 2, "palestra");
+INSERT INTO atividade (nome, id_evento, tipo_atividade) VALUES ("O impacto dos dados nas decisões corporativas", 2, "palestra");
 INSERT INTO atividade (nome, id_evento, tipo_atividade) VALUES ("Visão computacional", 2, "palestra");
 
 /* Inserção Palestra */
@@ -342,6 +342,14 @@ INSERT INTO participante (nome, cpf, cep, e_mail, telefone, Staff, Palestrante, 
 VALUES ("Dayane Silva", 43269456704, 34504234, "dayane@contato.com", 458490934, false, true, true, false, false, false, false, false);
 INSERT INTO participante (nome, cpf, cep, e_mail, telefone, Staff, Palestrante, Ouvinte, Organizador, Ministrante_tutoria, Instrutor, Avaliador, Autor_Artigo) 
 VALUES ("Ricardo Pereira", 43269456705, 34504235, "Ricardo@contato.com", 458490935, false, true, true, false, false, false, false, false);
+INSERT INTO participante (nome, cpf, cep, e_mail, telefone, Staff, Palestrante, Ouvinte, Organizador, Ministrante_tutoria, Instrutor, Avaliador, Autor_Artigo) 
+VALUES ("Bianca Dias", 62207591338, 01014001, "biancadias@usp.br", 996324472, false, true, true, false, false, false, false, false);
+INSERT INTO participante (nome, cpf, cep, e_mail, telefone, Staff, Palestrante, Ouvinte, Organizador, Ministrante_tutoria, Instrutor, Avaliador, Autor_Artigo) 
+VALUES ("Helena Matsuda", 35712439866, 01015001, "hmatsuda@usp.br", 981650032, false, true, true, false, false, false, false, false);
+INSERT INTO participante (nome, cpf, cep, e_mail, telefone, Staff, Palestrante, Ouvinte, Organizador, Ministrante_tutoria, Instrutor, Avaliador, Autor_Artigo) 
+VALUES ("Luciana Karmizec", 39720465821, 01679001, "karmizec@usp.br", 945459966, false, true, true, false, false, false, false, false);
+INSERT INTO participante (nome, cpf, cep, e_mail, telefone, Staff, Palestrante, Ouvinte, Organizador, Ministrante_tutoria, Instrutor, Avaliador, Autor_Artigo) 
+VALUES ("Fernando Alburqueque", 29169407291, 01027001, "fernando.alburqueque@usp.br", 997246684, false, true, true, false, false, false, false, false);
 
 /* Inserção Dados Palestrante */
 
