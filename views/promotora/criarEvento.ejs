@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title> Gerenciador De Eventos </title>
+    <meta chartset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- CSS Externos -->
+    <link href="stylesheets/bootstrap.css" rel="stylesheet">
+    <link href="stylesheets/promotora.css" rel="stylesheet">
+    <!-- Fonte Ballo Da 2 e Poppins -->
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Da+2|Pangolin|Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header class="align-self-center shadow-sm p-3 mb-5 bg-white rounded">
+        <div id="container" class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text">
+                    <h2 class="titulo"> Gerenciador De Eventos </h2>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Main -->
+    <main>
+        <section>
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <h2 class="text-center titulo"> Criar Evento </h2>
+                        <!-- Formulário Cadastro Evento -->
+                        <form action="/cadastroPromotora" method="POST">
+                            <!-- Input Nome -->
+                            <div class="form-group row mb-0">
+                                <label for="nome" class="col-sm-12 col-form-label"></label>
+                                <div class="col-md-12">
+                                    <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite o nome do evento">
+                                </div>
+                            </div>
+                            <!-- Input Tema -->
+                            <div class="form-group row mb-0">
+                                <label for="tema" class="col-sm-12 col-form-label"></label>
+                                <div class="col-md-12">
+                                    <input type="text" class="form-control" id="tema" name="tema" placeholder="Digite o tema do evento">
+                                </div>
+                            </div>
+                            <!-- Input Edição -->
+                            <div class="form-group row mb-0">
+                                <label for="edicao" class="col-sm-12 col-form-label"></label>
+                                <div class="col-md-12">
+                                    <input type="text" class="form-control" id="edicao" name="edicao" placeholder="Digite a edição do evento">
+                                </div>
+                            </div>
+                            <!-- Input data início -->
+                            <div class="form-group row mb-0">
+                                <label for="dataInicio" class="col-sm-12 col-form-label"></label>
+                                <div class="col-md-12">
+                                    <input type="date" class="form-control" id="dataInicio" name="dataInicio" placeholder="Digite a data de início do evento">
+                                </div>
+                            </div>
+                            <!-- Input data fim -->
+                            <div class="form-group row mb-0">
+                                <label for="dataFim" class="col-sm-12 col-form-label"></label>
+                                <div class="col-md-12">
+                                    <input type="date" class="form-control" id="dataFim" name="dataFim" placeholder="Digite a data de término do evento">
+                                </div>
+                            </div>
+                            <!-- Input CNPJ Organizadora -->
+                            <div class="form-group row mb-0">
+                                <label for="cnpjOrganizadora" class="col-sm-12 col-form-label"></label>
+                                <div class="col-md-12">
+                                    <input type="text" class="form-control" id="cnpjOrganizadora" name="cnpj Organizadora" placeholder="Digite o CNPJ da Organizadora">
+                                </div>
+                            </div>
+                            <!-- Input Confirmar Senha -->
+                            <div class="form-group row">
+                                <label for="cnpjPromotora" class="col-sm-12 col-form-label"></label>
+                                <div class="col-md-12">
+                                    <input type="hidden" class="form-control" id="cnpjPromotora" name="cnpjPromotora">
+                                </div>
+                            </div>
+                            <!-- Botão para confirmar  -->
+                            <div class="form-group row">
+                                <div class="col-md-12 text-center">
+                                    <button type="submit" class="btn w-100 botao"> Cadastrar Evento </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>  
+            </div>
+        </section>
+    </main>
+    <script type="text/javascript" src="javascripts/jquery.js"></script>
+    <script type="text/javascript" src="javascripts/bootstrap.js"></script>
+</body>
+</html>
