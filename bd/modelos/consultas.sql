@@ -15,16 +15,34 @@ AND numero_lote IN (1,2);
 Qual o cpf e o nome dos Organizadores que não coordenam nenhum mobilizador de caravana, possuem 
 tempo de contrato menor do que 6 meses e possuem remuneração maior do que 720,00.
 */
-SELECT DISTINCT organizador.cpf, mobilizador_caravana.cpf FROM organizador
+SELECT DISTINCT organizador.cpf FROM organizador
 LEFT JOIN mobilizador_caravana
-on organizador.cpf = mobilizador_caravana.COO_CPF;
-
-SELECT distinct organizador.cpf from contrata, organizador
-where datediff(data_fim, data_inicio) < 6*30 AND remuneracao > 720.00;
-
+on organizador.cpf = mobilizador_caravana.COO_CPF
+where mobilizador_caravana.COO_CPF is null and organizador.cpf in
+	(SELECT distinct organizador.cpf from contrata, organizador
+	where datediff(data_fim, data_inicio) < 6*30 AND remuneracao >= 720.00);
 
 /*
-Qual foi o balanço financeiro do evento 2 (“nome do evento aqui”)? Se o balanço for 
-negativo, isto é, o valor de despesas supera o de receita, quais as movimentações 
-(descrição e valor) que estão acima da média de gastos?
+Liste as atividades que possuam  mais de 10 ouvintes inscritos. 
 */
+SELECT atividade.nome, COUNT(*) FROM atividade 
+INNER JOIN INSCREVE ON atividade.codigo_atividade = INSCREVE.codigo_atividade
+GROUP BY INSCREVE.codigo_atividade HAVING COUNT(*) > 10;
+
+/*
+Quais os nomes dos eventos que ocorrem presencialmente no Ceará e que possuem menos de 3 patrocinadores?
+*/
+SELECT DISTINCT Evento.id_evento, Evento.nome from evento 
+INNER JOIN FAZ_LOCACAO ON evento.id_evento = FAZ_LOCACAO.id_evento
+INNER JOIN Local_presencial on FAZ_LOCACAO.id_local = Local_presencial.id_local
+INNER JOIN PATROCINA on PATROCINA.id_evento = evento.id_evento
+where Local_presencial.end_estado like '%Ceará%'
+GROUP BY PATROCINA.id_evento HAVING COUNT(*)<3;
+ 
+/*
+Qual o nome completo e o cpf do participante que é um ministrante_tutoria, possui “Pereira” no seu nome e é também outro tipo de participante?
+*/
+select nome, cpf from participante
+where ministrante_tutoria = '1' and (Palestrante = '1' or staff = '1') and nome like '%Pereira%';
+
+select * from participante where Ministrante_tutoria = '1';

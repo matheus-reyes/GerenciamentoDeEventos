@@ -847,31 +847,15 @@ where cpf IN (43269456730, 43269456731, 43269456733, 43269456734);
 /*Contrata: relacao entre Organizadora e organizador*/
 
 INSERT INTO contrata (cpf, data_inicio, data_fim, cnpj) VALUES 
-	(43269456716, '2021-01-19', '2021-01-22',11524184000187),
-    (43269456717, '2020-11-16', '2020-11-20',11524184000187),
-    (43269456718, '2020-09-21', '2020-09-25',11524184000187),
-    (43269456719, '2020-11-04', '2020-11-07',11524184000187),
-    (43269456720, '2021-06-03', '2021-06-05',11524184000187);
-    
-update contrata
-set data_fim = ADDDATE(data_fim, INTERVAL 12 month)
-where cpf = 43269456716;
+	(43269456716, '2021-01-19', '2022-01-22',11524184000187),
+    (43269456717, '2020-11-16', '2022-11-20',11524184000187),
+    (43269456718, '2020-09-21', '2021-03-25',11524184000187),
+    (43269456719, '2020-11-04', '2021-04-07',11524184000187),
+    (43269456720, '2021-06-03', '2022-04-05',11524184000187),
+    (43269456730, '2020-08-01', '2021-06-15',11524184000187),
+    (43269456733, '2021-01-22', '2021-06-09',11524184000187),
+    (43269456734, '2021-03-14', '2021-07-11',11524184000187);
 
-update contrata
-set data_fim = ADDDATE(data_fim, INTERVAL 2 year)
-where cpf = 43269456717;
-
-update contrata
-set data_fim = ADDDATE(data_fim, INTERVAL 6 month)
-where cpf = 43269456718;
-
-update contrata
-set data_fim = ADDDATE(data_fim, INTERVAL 5 month)
-where cpf = 43269456719;
-
-update contrata
-set data_fim = ADDDATE(data_fim, INTERVAL 10 month)
-where cpf = 43269456720;
 /*Compoe: relacao entre Organizador e Comite_programa*/
 
 INSERT INTO compoe (id_comite, cpf) VALUES
