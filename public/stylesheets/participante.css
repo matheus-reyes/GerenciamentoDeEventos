@@ -1,0 +1,103 @@
+html{
+    font-size:16px;
+}
+
+/* Títulos da Página */
+
+.titulo {
+    font-family: 'Poppins', sans-serif;
+    color: rgb(96, 195, 171);
+}
+
+/* Texto */
+
+.body-text-p {
+    font-size: 1.1rem;
+    font: sans-serif bold;
+    color: grey;
+    text-align: justify;
+    line-height: 30px;
+    font-family: 'Baloo Da 2', cursive;
+    margin: 30px 0 30px 0;
+}
+
+/* Sombra na parte inferior */
+
+.sombra{
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.3);
+}
+
+/* Imagens */
+
+.img{
+    width: 400px;
+    height: 300px;
+    display: block;
+}
+
+/* Links */
+
+a:link{
+    color:rgb(96, 195, 171);
+}
+
+a:hover{
+    text-decoration:none;
+    color: rgb(96, 195, 171, 0.5);
+}
+
+a:visited{
+    color:rgb(96, 195, 171);
+}
+
+.tamanho-imagem-card{
+    height: 175px;
+}
+
+/* Botões das Sections */
+
+.botao {
+    color: white;
+    font-size: 1.1rem;
+    border-radius: 15px;
+    padding: 10px 20px 10px 20px;
+    background-color: #4AE894;
+    font-family: 'Baloo Da 2', cursive;
+}
+
+
+.botao:hover {
+    background-color: rgb(96, 195, 171);
+    text-decoration: none;
+    color: white;
+}
+
+.botaoVermelho{
+    background-color: red;
+}
+
+/* Media Querys Para Responsividade */
+
+@media(max-width: 1680px) {
+    html{
+        font-size: 16px;
+    }
+}
+
+@media(max-width: 1024px) {
+    html{
+        font-size: 13px;
+    }
+}
+
+@media(max-width: 768px) {
+    html{
+        font-size: 13px;
+    }
+}
+
+@media(max-width: 480px) {
+    html{
+        font-size: 11.5px;
+    }
+}

@@ -7,8 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- CSS Externos -->
-    <link href="stylesheets/index.css" rel="stylesheet">
     <link href="stylesheets/bootstrap.css" rel="stylesheet">
+    <link href="stylesheets/participante.css" rel="stylesheet">
     <!-- Fonte Ballo Da 2 e Poppins -->
     <link href="https://fonts.googleapis.com/css?family=Baloo+Da+2|Pangolin|Poppins&display=swap" rel="stylesheet">
 </head>
@@ -24,7 +24,60 @@
     </header>
     <!-- Main -->
     <main>
-        
+        <div id="container" class="container-fluid">
+            <div class="row">
+
+                <!-- Menu Lateral -->
+                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 text-center text shadow-sm p-3 mb-5 bg-white rounded">
+                    <div class="titulo mb-4">
+                        <a href="/todosEventosParticipante" class="text"> Todos os Eventos </a>
+                    </div>
+                    <div class="titulo mb-4">
+                        <a href="/eventosParticipante" class="text"> Seus Eventos </a>
+                    </div>
+                    <div class="titulo">
+                        <a href="/contaParticipante" class="text"> Minha Conta </a>
+                    </div>
+                </div>
+                
+                <!-- Corpo da página -->
+                <div class="offset-1 col-lg-8 col-md-8 col-sm-11 col-xs-11 text shadow-sm p-3 mb-5 bg-white rounded">
+                    <div class="row">
+                        <div class="offset-1 col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                            <div class="card" style="width: 18rem;">
+                                <img class="card-img-top tamanho-imagem-card" src="images/evento2.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title"> Nome Evento </h5>
+                                    <p class="card-text"> Uma linda e belíssima descrição, feita por uma pessoa incrível e sem criatividade :).</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item"> Data Início - Data Fim </li>
+                                </ul>
+                                <div class="card-body">
+                                    <a href="#" class="card-link"> Detalhes </a>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                            <div class="card" style="width: 18rem;">
+                                <img class="card-img-top tamanho-imagem-card" src="images/evento3.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title"> Nome Evento </h5>
+                                    <p class="card-text"> Uma linda e belíssima descrição, feita por uma pessoa incrível e sem criatividade :).</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item"> Data Início - Data Fim </li>
+                                </ul>
+                                <div class="card-body">
+                                    <a href="#" class="card-link"> Detalhes </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     <script type="text/javascript" src="javascripts/jquery.js"></script>
     <script type="text/javascript" src="javascripts/bootstrap.js"></script>
