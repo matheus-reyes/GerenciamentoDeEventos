@@ -48,6 +48,12 @@ INSERT INTO evento (tema, edicao, nome, data_inicio, data_fim, cnpj, PRO_cnpj) V
 INSERT INTO evento (tema, edicao, nome, data_inicio, data_fim, cnpj, PRO_cnpj) VALUES ("Contabilidade", 1, "CONBCON - Congresso Online Brasileiro de Contabilidade", '2020-09-21', '2020-09-25', 14578574000156, 84963187000151);
 INSERT INTO evento (tema, edicao, nome, data_inicio, data_fim, cnpj, PRO_cnpj) VALUES ("Direito", 34, "XXXIV Congresso Brasileiro de Direito Administrativo", '2020-11-04', '2020-11-07', 27349772000111, 19741351000141);
 INSERT INTO evento (tema, edicao, nome, data_inicio, data_fim, cnpj, PRO_cnpj) VALUES ("Psicologia", 18, "XVIII Congresso Brasileiro do Sono", '2021-06-03', '2021-06-05', 07755256000158, 39716013000120);
+INSERT INTO evento (tema, edicao, nome, data_inicio, data_fim, cnpj, PRO_cnpj) VALUES 
+("Computacao", 6, "VI Evento de Computacao", '2021-01-19', '2021-01-22', 11524184000187, 37159434000115),
+("Computacao", 16, "Semana de Sistemas de informação", '2020-11-16', '2020-11-20', 29532264000178, 21246221000199),
+("Contabilidade", 44, "Congresso Brasileiro de Contabilidade", '2020-09-21', '2020-09-25', 14578574000156, 84963187000151),
+("Direito", 26, "XXVI Congresso Brasileiro de Direito", '2020-11-04', '2020-11-07', 27349772000111, 19741351000141),
+("Engenharia", 15, "XV Congresso Brasileiro do De Petróleo", '2021-06-03', '2021-06-05', 07755256000158, 39716013000120);
 
 /* Inserção Dados Movimentacao_Financeira */
 
@@ -77,7 +83,13 @@ INSERT INTO local (nome, valor_locacao, Local_online, Local_presencial) VALUES (
 INSERT INTO local (nome, valor_locacao, Local_online, Local_presencial) VALUES ("Pavilhão Anhembi", 20.000, false, true);
 INSERT INTO local (nome, valor_locacao, Local_online, Local_presencial) VALUES ("São Paulo Expo", 20.000, false, true);
 INSERT INTO local (nome, valor_locacao, Local_online, Local_presencial) VALUES ("Expo Center Norte", 20.000, false, true);
-
+INSERT INTO Local (nome, valor_locacao, Local_online, Local_presencial) VALUES
+ ("Universidade Federal do Ceará", 0, false, true),
+ ("Universidade Federal de Alagoas", 0, false, true),
+ ("Centro de Eventos do Ceará", 1000, false, true),
+ ("Universidade Federal de Sergipe", 25, false, true),
+ ("Fundação Oswaldo Cruz - Ceará", 0, false, true);
+ 
 /* Inserção Dados Local_Presencial */
 
 INSERT INTO local_presencial (id_local, end_logradouro, end_cidade, end_estado, end_cep, end_numero, capacidade, area) VALUES (2, "Rua Quarenta e Nove - Boa Esperança", "Cuiabá", "Mato Grosso", "78060-900", "2367", 1000, 149.000);
@@ -85,6 +97,12 @@ INSERT INTO local_presencial (id_local, end_logradouro, end_cidade, end_estado, 
 INSERT INTO local_presencial (id_local, end_logradouro, end_cidade, end_estado, end_cep, end_numero, capacidade, area) VALUES (8, "Avenida Olavo Fontoura - Santana", "São Paulo", "São Paulo", "02012-021", "1209", 30000, 100.000);
 INSERT INTO local_presencial (id_local, end_logradouro, end_cidade, end_estado, end_cep, end_numero, capacidade, area) VALUES (9, "Rod. dos Imigrantes - Vila Água Funda", "São Paulo", "São Paulo", "04329-900", "1,5", 7810, 14.000);
 INSERT INTO local_presencial (id_local, end_logradouro, end_cidade, end_estado, end_cep, end_numero, capacidade, area) VALUES (10, "Rua José Bernardo Pinto - Vila Guilherme", "São Paulo", "São Paulo", "02055-000", "333", 4500, 98.000);
+INSERT INTO local_presencial (id_local, end_logradouro, end_cidade, end_estado, end_cep, end_numero, capacidade, area) VALUES 
+(11, "Avenida da Universidade", "Fortaleza", "Ceará", "06640-450", "2853", 1200, 259.000),
+(12, "Av. Lourival Melo Mota", "Maceió", "Alagoas", "45807-001", "1000", 3800, 1400),
+(13, "Av. Washington Soares", "Fortaleza", "Ceará", "25982-741", "999", 30000, 100.000),
+(14, "Av. Marechal Rondon", "Maceió", "Alagoas", "65129-954", "15", 7810, 14.000),
+(15, "Rua São José", "Fortaleza", "Ceará", "05544-201", "3240", 4500, 98.000);
 
 /* Inserção Dados Local_Online */
 
@@ -101,6 +119,12 @@ INSERT INTO faz_locacao (id_contrato, id_evento, data_inicio, data_fim, valor, i
 INSERT INTO faz_locacao (id_contrato, id_evento, data_inicio, data_fim, valor, id_local) VALUES (3, 3, '2020-09-21', '2020-09-25', 500, 3);
 INSERT INTO faz_locacao (id_contrato, id_evento, data_inicio, data_fim, valor, id_local) VALUES (4, 4, '2020-11-04', '2020-11-07', 500, 4);
 INSERT INTO faz_locacao (id_contrato, id_evento, data_inicio, data_fim, valor, id_local) VALUES (5, 5, '2021-06-03', '2021-06-05', 20.000, 5);
+INSERT INTO faz_locacao (id_contrato, id_evento, data_inicio, data_fim, valor, id_local) VALUES 
+(6, 6, '2020-05-19', '2021-01-22', 5000, 11),
+(7, 7, '2019-04-19', '2021-02-05', 550, 12),
+(8, 8, '2020-11-19', '2021-12-14', 0, 13),
+(9, 9, '2021-09-19', '2022-10-25', 40, 14),
+(10, 10, '2021-07-19', '2022-04-02', 555, 15);
 
 /* Inserção Dados Local_Atividade */
 
@@ -766,7 +790,21 @@ INSERT INTO patrocina(cnpj, id_evento) VALUES (22259434000333,2);
 INSERT INTO patrocina(cnpj, id_evento) VALUES (12359434000321,3);
 INSERT INTO patrocina(cnpj, id_evento) VALUES (55559434000432,4);
 INSERT INTO patrocina(cnpj, id_evento) VALUES (25559434000522,5);
-
+INSERT INTO PATROCINA (cnpj, id_evento) VALUES
+(12359434000321, 6),
+(17359434000511, 6),
+(22259434000333, 6),
+(25559434000522, 6),
+(55559434000432, 6),
+(22259434000333, 7),
+(25559434000522, 7),
+(55559434000432, 7),
+(12359434000321, 7),
+(25559434000522, 8),
+(25559434000522, 9),
+(22259434000333, 8),
+(55559434000432, 9),
+(55559434000432, 10);
 /*Contrato e Rede Social*/
 
 INSERT INTO contrato(id_contrato, representante_evento, representante_patrocinadora, taxa_patrocinio, plano_patrocinio, data_inicio, data_fim, cnpj, C_O_cnpj) 
@@ -797,6 +835,15 @@ INSERT INTO organizador (cpf, remuneracao, carga_horaria) VALUES
     (43269456719, 720.00, 8.00),
     (43269456720, 725.00, 8.00);
 
+INSERT INTO organizador (cpf, remuneracao, carga_horaria) VALUES 
+    (43269456731, 720.00, 8.00),
+    (43269456733, 720.00, 8.00),
+    (43269456734, 720.00, 8.00);
+    
+UPDATE participante
+set organizador = 1
+where cpf IN (43269456730, 43269456731, 43269456733, 43269456734);
+
 /*Contrata: relacao entre Organizadora e organizador*/
 
 INSERT INTO contrata (cpf, data_inicio, data_fim, cnpj) VALUES 
@@ -805,7 +852,26 @@ INSERT INTO contrata (cpf, data_inicio, data_fim, cnpj) VALUES
     (43269456718, '2020-09-21', '2020-09-25',11524184000187),
     (43269456719, '2020-11-04', '2020-11-07',11524184000187),
     (43269456720, '2021-06-03', '2021-06-05',11524184000187);
+    
+update contrata
+set data_fim = ADDDATE(data_fim, INTERVAL 12 month)
+where cpf = 43269456716;
 
+update contrata
+set data_fim = ADDDATE(data_fim, INTERVAL 2 year)
+where cpf = 43269456717;
+
+update contrata
+set data_fim = ADDDATE(data_fim, INTERVAL 6 month)
+where cpf = 43269456718;
+
+update contrata
+set data_fim = ADDDATE(data_fim, INTERVAL 5 month)
+where cpf = 43269456719;
+
+update contrata
+set data_fim = ADDDATE(data_fim, INTERVAL 10 month)
+where cpf = 43269456720;
 /*Compoe: relacao entre Organizador e Comite_programa*/
 
 INSERT INTO compoe (id_comite, cpf) VALUES
