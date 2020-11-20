@@ -641,6 +641,104 @@ INSERT INTO inscreve (codigo_atividade, cpf) VALUES (37 , 43269456735);
 INSERT INTO inscreve (codigo_atividade, cpf) VALUES (38 , 43269456735);
 INSERT INTO inscreve (codigo_atividade, cpf) VALUES (39 , 43269456735);
 INSERT INTO inscreve (codigo_atividade, cpf) VALUES (40 , 43269456735);
+INSERT INTO inscreve (codigo_atividade, cpf) VALUES (9 , 43269456701);
+INSERT INTO inscreve (codigo_atividade, cpf) VALUES (10 , 43269456701);
+INSERT INTO inscreve (codigo_atividade, cpf) VALUES (11 , 43269456701);
+INSERT INTO inscreve (codigo_atividade, cpf) VALUES (20 , 43269456701);
+INSERT INTO inscreve (codigo_atividade, cpf) VALUES (22 , 43269456701);
+INSERT INTO inscreve (codigo_atividade, cpf) VALUES (32 , 43269456701);
+INSERT INTO inscreve (codigo_atividade, cpf) VALUES (39 , 43269456701);
+INSERT INTO inscreve (codigo_atividade, cpf) VALUES (40 , 43269456701);
+INSERT INTO inscreve (codigo_atividade, cpf) VALUES (22 , 43269456702);
+INSERT INTO inscreve (codigo_atividade, cpf) VALUES (25 , 43269456702);
+INSERT INTO inscreve (codigo_atividade, cpf) VALUES (27 , 43269456702);
+INSERT INTO inscreve (codigo_atividade, cpf) VALUES (30 , 43269456702);
+INSERT INTO inscreve (codigo_atividade, cpf) VALUES (32 , 43269456702);
+INSERT INTO inscreve (codigo_atividade, cpf) VALUES (40 , 43269456702);
+INSERT INTO inscreve (codigo_atividade, cpf) VALUES (25 , 43269456703);
+INSERT INTO inscreve (codigo_atividade, cpf) VALUES (27 , 43269456703);
+INSERT INTO inscreve (codigo_atividade, cpf) VALUES (30 , 43269456703);
+INSERT INTO inscreve (codigo_atividade, cpf) VALUES (39 , 43269456703);
+INSERT INTO inscreve (codigo_atividade, cpf) VALUES (40 , 43269456703);
+INSERT INTO inscreve (codigo_atividade, cpf) VALUES (10 , 43269456704);
+INSERT INTO inscreve (codigo_atividade, cpf) VALUES (11 , 43269456704);
+INSERT INTO inscreve (codigo_atividade, cpf) VALUES (39 , 43269456704);
+INSERT INTO inscreve (codigo_atividade, cpf) VALUES (40 , 43269456704);
+INSERT INTO inscreve (codigo_atividade, cpf) VALUES (2 , 43269456705);
+INSERT INTO inscreve (codigo_atividade, cpf) VALUES (10 , 43269456705);
+INSERT INTO inscreve (codigo_atividade, cpf) VALUES (23 , 43269456705);
+INSERT INTO inscreve (codigo_atividade, cpf) VALUES (27 , 43269456705);
+INSERT INTO inscreve (codigo_atividade, cpf) VALUES (28 , 43269456705);
+INSERT INTO inscreve (codigo_atividade, cpf) VALUES (30 , 43269456705);
+INSERT INTO inscreve (codigo_atividade, cpf) VALUES (10 , 43269456706);
+INSERT INTO inscreve (codigo_atividade, cpf) VALUES (27 , 43269456706);
+INSERT INTO inscreve (codigo_atividade, cpf) VALUES (33 , 43269456706);
+INSERT INTO inscreve (codigo_atividade, cpf) VALUES (35 , 43269456706);
+INSERT INTO inscreve (codigo_atividade, cpf) VALUES (39 , 43269456706);
+INSERT INTO inscreve (codigo_atividade, cpf) VALUES (40 , 43269456706);
+INSERT INTO inscreve (codigo_atividade, cpf) VALUES (1 , 43269456707);
+INSERT INTO inscreve (codigo_atividade, cpf) VALUES (7 , 43269456707);
+INSERT INTO inscreve (codigo_atividade, cpf) VALUES (20 , 43269456707);
+INSERT INTO inscreve (codigo_atividade, cpf) VALUES (27 , 43269456707);
+INSERT INTO inscreve (codigo_atividade, cpf) VALUES (33 , 43269456707);
+INSERT INTO inscreve (codigo_atividade, cpf) VALUES (39 , 43269456707);
+INSERT INTO inscreve (codigo_atividade, cpf) VALUES (40 , 43269456707);
+INSERT INTO inscreve (codigo_atividade, cpf) VALUES (1 , 43269456708);
+INSERT INTO inscreve (codigo_atividade, cpf) VALUES (7 , 43269456708);
+INSERT INTO inscreve (codigo_atividade, cpf) VALUES (20 , 43269456708);
+INSERT INTO inscreve (codigo_atividade, cpf) VALUES (22 , 43269456708);
+INSERT INTO inscreve (codigo_atividade, cpf) VALUES (27 , 43269456708);
+INSERT INTO inscreve (codigo_atividade, cpf) VALUES (29 , 43269456708);
+INSERT INTO inscreve (codigo_atividade, cpf) VALUES (33 , 43269456708);
+INSERT INTO inscreve (codigo_atividade, cpf) VALUES (39 , 43269456708);
+INSERT INTO inscreve (codigo_atividade, cpf) VALUES (40 , 43269456708);
+INSERT INTO inscreve (codigo_atividade, cpf) VALUES (7 , 43269456709);
+INSERT INTO inscreve (codigo_atividade, cpf) VALUES (11 , 43269456709);
+INSERT INTO inscreve (codigo_atividade, cpf) VALUES (20 , 43269456709);
+INSERT INTO inscreve (codigo_atividade, cpf) VALUES (22 , 43269456709);
+INSERT INTO inscreve (codigo_atividade, cpf) VALUES (33 , 43269456709);
+INSERT INTO inscreve (codigo_atividade, cpf) VALUES (34 , 43269456709);
+INSERT INTO inscreve (codigo_atividade, cpf) VALUES (36 , 43269456709);
+INSERT INTO inscreve (codigo_atividade, cpf) VALUES (37 , 43269456709);
+INSERT INTO inscreve (codigo_atividade, cpf) VALUES (39 , 43269456709);
+INSERT INTO inscreve (codigo_atividade, cpf) VALUES (40 , 43269456709);
+INSERT INTO inscreve (codigo_atividade, cpf) VALUES (1 , 43269456710);
+INSERT INTO inscreve (codigo_atividade, cpf) VALUES (7 , 43269456710);
+INSERT INTO inscreve (codigo_atividade, cpf) VALUES (10 , 43269456710);
+INSERT INTO inscreve (codigo_atividade, cpf) VALUES (27 , 43269456710);
+INSERT INTO inscreve (codigo_atividade, cpf) VALUES (30 , 43269456710);
+INSERT INTO inscreve (codigo_atividade, cpf) VALUES (31 , 43269456710);
+INSERT INTO inscreve (codigo_atividade, cpf) VALUES (11 , 43269456731);
+INSERT INTO inscreve (codigo_atividade, cpf) VALUES (21 , 43269456731);
+INSERT INTO inscreve (codigo_atividade, cpf) VALUES (27 , 43269456731);
+INSERT INTO inscreve (codigo_atividade, cpf) VALUES (30 , 43269456731);
+INSERT INTO inscreve (codigo_atividade, cpf) VALUES (33 , 43269456731);
+INSERT INTO inscreve (codigo_atividade, cpf) VALUES (39 , 43269456731);
+INSERT INTO inscreve (codigo_atividade, cpf) VALUES (40 , 43269456731);
+INSERT INTO inscreve (codigo_atividade, cpf) VALUES (19 , 43269456732);
+INSERT INTO inscreve (codigo_atividade, cpf) VALUES (27 , 43269456732);
+INSERT INTO inscreve (codigo_atividade, cpf) VALUES (29 , 43269456732);
+INSERT INTO inscreve (codigo_atividade, cpf) VALUES (39 , 43269456732);
+INSERT INTO inscreve (codigo_atividade, cpf) VALUES (40 , 43269456732);
+INSERT INTO inscreve (codigo_atividade, cpf) VALUES (1 , 43269456733);
+INSERT INTO inscreve (codigo_atividade, cpf) VALUES (7 , 43269456733);
+INSERT INTO inscreve (codigo_atividade, cpf) VALUES (22 , 43269456733);
+INSERT INTO inscreve (codigo_atividade, cpf) VALUES (27 , 43269456733);
+INSERT INTO inscreve (codigo_atividade, cpf) VALUES (28 , 43269456733);
+INSERT INTO inscreve (codigo_atividade, cpf) VALUES (33 , 43269456733);
+INSERT INTO inscreve (codigo_atividade, cpf) VALUES (39 , 43269456733);
+INSERT INTO inscreve (codigo_atividade, cpf) VALUES (40 , 43269456733);
+INSERT INTO inscreve (codigo_atividade, cpf) VALUES (1 , 43269456734);
+INSERT INTO inscreve (codigo_atividade, cpf) VALUES (7 , 43269456734);
+INSERT INTO inscreve (codigo_atividade, cpf) VALUES (22 , 43269456734);
+INSERT INTO inscreve (codigo_atividade, cpf) VALUES (33 , 43269456734);
+INSERT INTO inscreve (codigo_atividade, cpf) VALUES (39 , 43269456734);
+INSERT INTO inscreve (codigo_atividade, cpf) VALUES (40 , 43269456734);
+INSERT INTO inscreve (codigo_atividade, cpf) VALUES (7 , 43269456735);
+INSERT INTO inscreve (codigo_atividade, cpf) VALUES (27 , 43269456735);
+INSERT INTO inscreve (codigo_atividade, cpf) VALUES (29 , 43269456735);
+INSERT INTO inscreve (codigo_atividade, cpf) VALUES (30 , 43269456735);
+
 
 /* Inserção Dados Organiza (Relação entre Staff e Atividade) */
 
@@ -847,31 +945,15 @@ where cpf IN (43269456730, 43269456731, 43269456733, 43269456734);
 /*Contrata: relacao entre Organizadora e organizador*/
 
 INSERT INTO contrata (cpf, data_inicio, data_fim, cnpj) VALUES 
-	(43269456716, '2021-01-19', '2021-01-22',11524184000187),
-    (43269456717, '2020-11-16', '2020-11-20',11524184000187),
-    (43269456718, '2020-09-21', '2020-09-25',11524184000187),
-    (43269456719, '2020-11-04', '2020-11-07',11524184000187),
-    (43269456720, '2021-06-03', '2021-06-05',11524184000187);
-    
-update contrata
-set data_fim = ADDDATE(data_fim, INTERVAL 12 month)
-where cpf = 43269456716;
+	(43269456716, '2021-01-19', '2022-01-22',11524184000187),
+    (43269456717, '2020-11-16', '2022-11-20',11524184000187),
+    (43269456718, '2020-09-21', '2021-03-25',11524184000187),
+    (43269456719, '2020-11-04', '2021-04-07',11524184000187),
+    (43269456720, '2021-06-03', '2022-04-05',11524184000187),
+    (43269456730, '2020-08-01', '2021-06-15',11524184000187),
+    (43269456733, '2021-01-22', '2021-06-09',11524184000187),
+    (43269456734, '2021-03-14', '2021-07-11',11524184000187);
 
-update contrata
-set data_fim = ADDDATE(data_fim, INTERVAL 2 year)
-where cpf = 43269456717;
-
-update contrata
-set data_fim = ADDDATE(data_fim, INTERVAL 6 month)
-where cpf = 43269456718;
-
-update contrata
-set data_fim = ADDDATE(data_fim, INTERVAL 5 month)
-where cpf = 43269456719;
-
-update contrata
-set data_fim = ADDDATE(data_fim, INTERVAL 10 month)
-where cpf = 43269456720;
 /*Compoe: relacao entre Organizador e Comite_programa*/
 
 INSERT INTO compoe (id_comite, cpf) VALUES
