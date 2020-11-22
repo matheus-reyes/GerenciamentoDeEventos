@@ -43,6 +43,27 @@ let Evento = (sequelize, Datatypes) => {
         }
     )
 
+    evento.associate = (models) => {
+
+        evento.belongsToMany(
+            models.Participante,
+            {
+                foreignKey: 'id_evento',
+                as: 'evento',
+                through: models.Ingresso
+            }
+        );
+
+        evento.belongsTo(
+            models.Promotora, 
+            {
+                foreignKey: 'PRO_cnpj',
+                as: 'promotora'
+            }
+        );
+
+    }
+
     return evento;
 
 }

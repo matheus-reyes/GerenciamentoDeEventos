@@ -40,10 +40,6 @@ let Participante = (sequelize, Datatypes) => {
                 type: Datatypes.BOOLEAN,
                 allowNull: false
             },
-            Staff:{
-                type: Datatypes.BOOLEAN,
-                allowNull: false
-            },
             Ministrante_tutoria:{
                 type: Datatypes.BOOLEAN,
                 allowNull: false
@@ -66,6 +62,19 @@ let Participante = (sequelize, Datatypes) => {
             timestamps: false
         }
     )
+
+    participante.associate = (models) => {
+
+        participante.belongsToMany(
+            models.Evento,
+            {
+                foreignKey: 'cpf',
+                as: 'participante',
+                through: models.Ingresso
+            }
+        );
+
+    }
 
     return participante;
 

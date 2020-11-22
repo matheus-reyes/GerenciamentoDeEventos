@@ -15,6 +15,18 @@ let Promotora = (sequelize, Datatypes) => {
         }
     )
 
+    promotora.associate = (models) => {
+
+        promotora.hasMany(
+            models.Evento,
+            {
+                foreignKey: 'PRO_cnpj',
+                as: 'promotora'
+            }
+        );
+
+    }
+
     return promotora;
 
 }
