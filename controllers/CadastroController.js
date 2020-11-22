@@ -1,3 +1,5 @@
+const {Promotora, Participante} = require("../models");
+
 module.exports = {
 
     cadastro: (req, res) => {
@@ -6,9 +8,13 @@ module.exports = {
 
     },
 
-    cadastroParticipante: (req, res) => {
+    cadastroParticipante: async (req, res) => {
 
-        res.redirect("/inicioParticipante");
+        let participante = await Participante.findAll();
+
+        console.log(participante);
+
+        // res.redirect("/inicioParticipante");
 
     },
 

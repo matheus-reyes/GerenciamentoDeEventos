@@ -13,7 +13,7 @@ let Participante = (sequelize, Datatypes) => {
                 allowNull: false
             },
             cep:{
-                type: Datatypes.INT,
+                type: Datatypes.INTEGER,
                 allowNull: false
             },
             e_mail:{
@@ -21,7 +21,7 @@ let Participante = (sequelize, Datatypes) => {
                 allowNull: false
             },
             telefone:{
-                type: Datatypes.INT,
+                type: Datatypes.INTEGER,
                 allowNull: false
             },
             Staff:{
