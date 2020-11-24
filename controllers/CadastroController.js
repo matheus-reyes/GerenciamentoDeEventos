@@ -3,13 +3,19 @@ const bcrypt = require('bcrypt');
 
 module.exports = {
 
-    cadastro: (req, res) => {
+    cadastroParticipante: (req, res) => {
 
-        res.render("cadastro");
+        res.render("cadastroParticipante");
 
     },
 
-    cadastroParticipante: async (req, res) => {
+    cadastroPromotora: (req, res) => {
+
+        res.render("cadastroPromotora");
+
+    },
+
+    cadastroParticipanteForm: async (req, res) => {
 
         // Atributos Formulário
         const nome = req.body.nome;
@@ -31,7 +37,7 @@ module.exports = {
         //criptografa a senha com bcrypt
         let senhaCriptografada = bcrypt.hashSync(password, 10);
 
-        //compara se as senhas são iguais
+        // compara se as senhas são iguais
         if(bcrypt.compareSync(confirmpassword, senhaCriptografada)){
             
             await Participante.create({
@@ -40,6 +46,7 @@ module.exports = {
                 cep,
                 e_mail,
                 telefone,
+                senha: senhaCriptografada,
                 Staff,
                 Palestrante,
                 Ouvinte,
@@ -59,7 +66,7 @@ module.exports = {
 
     },
 
-    cadastroPromotora: (req, res) => {
+    cadastroPromotoraForm: (req, res) => {
 
         res.redirect("/inicioPromotora");
 

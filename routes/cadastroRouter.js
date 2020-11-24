@@ -3,8 +3,9 @@ const router = express.Router();
 
 const controller = require("../controllers/CadastroController");
 
-router.get("/cadastro", controller.cadastro);
-router.post("/cadastroParticipante", controller.cadastroParticipante);
-router.post("/cadastroPromotora", controller.cadastroPromotora);
+router.get("/cadastroParticipante", controller.cadastroParticipante);
+router.get("/cadastroPromotora", controller.cadastroPromotora);
+router.post("/cadastroParticipanteForm", controller.cadastroParticipanteForm);
+router.post("/cadastroPromotoraForm", controller.cadastroPromotoraForm);
 
 module.exports = router;

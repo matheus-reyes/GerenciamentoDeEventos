@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title> Gerenciador De Eventos </title>
+    <meta chartset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- CSS Externos -->
+    <link href="stylesheets/index.css" rel="stylesheet">
+    <link href="stylesheets/bootstrap.css" rel="stylesheet">
+    <!-- Fonte Ballo Da 2 e Poppins -->
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Da+2|Pangolin|Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header class="align-self-center shadow-sm p-3 mb-5 bg-white rounded">
+        <div id="container" class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text">
+                    <h2 class="titulo"> Gerenciador De Eventos </h2>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Main -->
+    <main>
+        <section>
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <h2 class="text-center titulo"> Cadastro Participante </h2>
+                        <!-- Formulário Cadastro Participante -->
+                        <form action="/cadastroParticipanteForm" method="POST">
+                            <!-- Input Nome -->
+                            <div class="form-group row mb-0">
+                                <label for="nome" class="col-sm-12 col-form-label"></label>
+                                <div class="col-md-12">
+                                    <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite seu nome">
+                                </div>
+                            </div>
+                            <!-- Input CPF -->
+                            <div class="form-group row mb-0">
+                                <label for="cpf" class="col-sm-12 col-form-label"></label>
+                                <div class="col-md-12">
+                                    <input type="text" class="form-control" id="cpf" name="cpf" placeholder="Digite seu CPF">
+                                </div>
+                            </div>
+                            <!-- Input Telefone -->
+                            <div class="form-group row mb-0">
+                                <label for="telefone" class="col-sm-12 col-form-label"></label>
+                                <div class="col-md-12">
+                                    <input type="number" class="form-control" id="telefone" name="telefone" placeholder="Digite seu telefone">
+                                </div>
+                            </div>
+                            <!-- Input CEP -->
+                            <div class="form-group row mb-0">
+                                <label for="cep" class="col-sm-12 col-form-label"></label>
+                                <div class="col-md-12">
+                                    <input type="number" class="form-control" id="cep" name="cep" placeholder="Digite seu CEP">
+                                </div>
+                            </div>
+                            <!-- Input E-mail -->
+                            <div class="form-group row mb-0">
+                                <label for="email" class="col-sm-12 col-form-label"></label>
+                                <div class="col-md-12">
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="Digite seu e-mail">
+                                </div>
+                            </div>
+                            <!-- Input Senha -->
+                            <div class="form-group row mb-0">
+                                <label for="password" class="col-sm-12 col-form-label"></label>
+                                <div class="col-md-12">
+                                    <input type="password" class="form-control" id="password" name="password" placeholder="Digite sua senha">
+                                </div>
+                            </div>
+                            <!-- Input Confirmar Senha -->
+                            <div class="form-group row">
+                                <label for="confirmpassword" class="col-sm-12 col-form-label"></label>
+                                <div class="col-md-12">
+                                    <input type="password" class="form-control" id="confirmpassword" name="confirmpassword" placeholder="Confirme sua senha">
+                                </div>
+                            </div>
+                            <!-- Botão de Login -->
+                            <div class="form-group row">
+                                <div class="col-md-12 text-center">
+                                    <button type="submit" class="btn w-100 botao"> Cadastrar </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>  
+            </div>
+        </section>
+    </main>
+    <script type="text/javascript" src="javascripts/jquery.js"></script>
+    <script type="text/javascript" src="javascripts/bootstrap.js"></script>
+</body>
+</html>

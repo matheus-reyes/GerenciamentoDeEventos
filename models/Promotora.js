@@ -25,6 +25,14 @@ let Promotora = (sequelize, Datatypes) => {
             }
         );
 
+        promotora.belongsTo(
+            models.Entidade, 
+            {
+                foreignKey: 'cnpj',
+                as: 'entidade'
+            }
+        );
+
     }
 
     return promotora;
