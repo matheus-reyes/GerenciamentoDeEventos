@@ -4,26 +4,26 @@ use eventos_cientificos;
 
 /* Inserção Dados Entidade */
 
-INSERT INTO entidade (cnpj, end_logradouro, end_cidade, end_estado, end_cep, end_numero, nome_entidade, email, Promotora, Patrocinadora, Organizadora) 
-VALUES (37159434000115, "Avenida dos Imigrantes", "Bragança Paulista", "São Paulo", "12903-130", "150", "Promotora de Eventos S.A", "eventossa@contato.br", true, false, false);
-INSERT INTO entidade (cnpj, end_logradouro, end_cidade, end_estado, end_cep, end_numero, nome_entidade, email, Promotora, Patrocinadora, Organizadora) 
-VALUES (21246221000199, "Avenida Paulista", "São Paulo", "São Paulo", "03619-130", "100", "Promotora de Eventos SP", "eventossp@contato.br", true, false, false);
-INSERT INTO entidade (cnpj, end_logradouro, end_cidade, end_estado, end_cep, end_numero, nome_entidade, email, Promotora, Patrocinadora, Organizadora) 
-VALUES (84963187000151, "Rua das Maritacas", "Bragança Paulista", "São Paulo", "12903-160", "100", "Promotora Bragança Eventos", "brageventos@contato.br", true, false, false);
-INSERT INTO entidade (cnpj, end_logradouro, end_cidade, end_estado, end_cep, end_numero, nome_entidade, email, Promotora, Patrocinadora, Organizadora) 
-VALUES (19741351000141, "Rua Operação", "São Paulo", "São Paulo", "05655-130", "99", "Promotora Cubatão Eventos", "cubataoeventos@contato.br", true, false, false);
-INSERT INTO entidade (cnpj, end_logradouro, end_cidade, end_estado, end_cep, end_numero, nome_entidade, email, Promotora, Patrocinadora, Organizadora) 
-VALUES (39716013000120, "Rua Teresópolis", "Rio de Janeiro", "Rio de Janeiro", "94443-456", "37", "Promotora Confort Eventos", "conforteventos@contato.br", true, false, false);
-INSERT INTO entidade (cnpj, end_logradouro, end_cidade, end_estado, end_cep, end_numero, nome_entidade, email, Promotora, Patrocinadora, Organizadora) 
-VALUES (11524184000187, "Rua Almeida", "Rio de Janeiro", "Rio de Janeiro", "94446-446", "27", "Zalinha Eventos", "zalinhaventos@contato.br", false, false, true);
-INSERT INTO entidade (cnpj, end_logradouro, end_cidade, end_estado, end_cep, end_numero, nome_entidade, email, Promotora, Patrocinadora, Organizadora) 
-VALUES (29532264000178, "Avenida Operária", "São Paulo", "São Paulo", "03567-456", "17", "Zen Eventos", "zeneventos@contato.br", false, false, true);
-INSERT INTO entidade (cnpj, end_logradouro, end_cidade, end_estado, end_cep, end_numero, nome_entidade, email, Promotora, Patrocinadora, Organizadora) 
-VALUES (14578574000156, "Rua Hernandes", "São Paulo", "São Paulo", "05567-456", "493", "Dalaz Eventos", "dalazeventos@contato.br", false, false, true);
-INSERT INTO entidade (cnpj, end_logradouro, end_cidade, end_estado, end_cep, end_numero, nome_entidade, email, Promotora, Patrocinadora, Organizadora) 
-VALUES (27349772000111, "Rua Fernandópolis", "Fernandópolis", "São Paulo", "95867-456", "3793", "Biro Eventos", "biroeventos@contato.br", false, false, true);
-INSERT INTO entidade (cnpj, end_logradouro, end_cidade, end_estado, end_cep, end_numero, nome_entidade, email, Promotora, Patrocinadora, Organizadora) 
-VALUES (07755256000158, "Rua Aparecida", "Rio de Janeiro", "Rio de Janeiro", "94443-434", "37562", "RJ Eventos", "rjeventos@contato.br", false, false, true);
+INSERT INTO entidade (cnpj, end_logradouro, end_cidade, end_estado, end_cep, end_numero, nome_entidade, email, senha, Promotora, Patrocinadora, Organizadora) 
+VALUES (37159434000115, "Avenida dos Imigrantes", "Bragança Paulista", "São Paulo", "12903-130", "150", "Promotora de Eventos S.A", "eventossa@contato.br", "$2b$10$TM0wdHsCY4xZIe1BH/Jp0uny9Kr7Sv461myqmcaalJY8CEi0XOg.i", true, false, false);
+INSERT INTO entidade (cnpj, end_logradouro, end_cidade, end_estado, end_cep, end_numero, nome_entidade, email, senha, Promotora, Patrocinadora, Organizadora) 
+VALUES (21246221000199, "Avenida Paulista", "São Paulo", "São Paulo", "03619-130", "100", "Promotora de Eventos SP", "eventossp@contato.br", "$2b$10$TM0wdHsCY4xZIe1BH/Jp0uny9Kr7Sv461myqmcaalJY8CEi0XOg.i", true, false, false);
+INSERT INTO entidade (cnpj, end_logradouro, end_cidade, end_estado, end_cep, end_numero, nome_entidade, email, senha, Promotora, Patrocinadora, Organizadora) 
+VALUES (84963187000151, "Rua das Maritacas", "Bragança Paulista", "São Paulo", "12903-160", "100", "Promotora Bragança Eventos", "brageventos@contato.br", "$2b$10$TM0wdHsCY4xZIe1BH/Jp0uny9Kr7Sv461myqmcaalJY8CEi0XOg.i", true, false, false);
+INSERT INTO entidade (cnpj, end_logradouro, end_cidade, end_estado, end_cep, end_numero, nome_entidade, email, senha, Promotora, Patrocinadora, Organizadora) 
+VALUES (19741351000141, "Rua Operação", "São Paulo", "São Paulo", "05655-130", "99", "Promotora Cubatão Eventos", "cubataoeventos@contato.br", "$2b$10$TM0wdHsCY4xZIe1BH/Jp0uny9Kr7Sv461myqmcaalJY8CEi0XOg.i", true, false, false);
+INSERT INTO entidade (cnpj, end_logradouro, end_cidade, end_estado, end_cep, end_numero, nome_entidade, email, senha, Promotora, Patrocinadora, Organizadora) 
+VALUES (39716013000120, "Rua Teresópolis", "Rio de Janeiro", "Rio de Janeiro", "94443-456", "37", "Promotora Confort Eventos", "conforteventos@contato.br", "$2b$10$TM0wdHsCY4xZIe1BH/Jp0uny9Kr7Sv461myqmcaalJY8CEi0XOg.i", true, false, false);
+INSERT INTO entidade (cnpj, end_logradouro, end_cidade, end_estado, end_cep, end_numero, nome_entidade, email, senha, Promotora, Patrocinadora, Organizadora) 
+VALUES (11524184000187, "Rua Almeida", "Rio de Janeiro", "Rio de Janeiro", "94446-446", "27", "Zalinha Eventos", "zalinhaventos@contato.br", "$2b$10$TM0wdHsCY4xZIe1BH/Jp0uny9Kr7Sv461myqmcaalJY8CEi0XOg.i", false, false, true);
+INSERT INTO entidade (cnpj, end_logradouro, end_cidade, end_estado, end_cep, end_numero, nome_entidade, email, senha, Promotora, Patrocinadora, Organizadora) 
+VALUES (29532264000178, "Avenida Operária", "São Paulo", "São Paulo", "03567-456", "17", "Zen Eventos", "zeneventos@contato.br", "$2b$10$TM0wdHsCY4xZIe1BH/Jp0uny9Kr7Sv461myqmcaalJY8CEi0XOg.i", false, false, true);
+INSERT INTO entidade (cnpj, end_logradouro, end_cidade, end_estado, end_cep, end_numero, nome_entidade, email, senha, Promotora, Patrocinadora, Organizadora) 
+VALUES (14578574000156, "Rua Hernandes", "São Paulo", "São Paulo", "05567-456", "493", "Dalaz Eventos", "dalazeventos@contato.br", "$2b$10$TM0wdHsCY4xZIe1BH/Jp0uny9Kr7Sv461myqmcaalJY8CEi0XOg.i", false, false, true);
+INSERT INTO entidade (cnpj, end_logradouro, end_cidade, end_estado, end_cep, end_numero, nome_entidade, email, senha, Promotora, Patrocinadora, Organizadora) 
+VALUES (27349772000111, "Rua Fernandópolis", "Fernandópolis", "São Paulo", "95867-456", "3793", "Biro Eventos", "biroeventos@contato.br", "$2b$10$TM0wdHsCY4xZIe1BH/Jp0uny9Kr7Sv461myqmcaalJY8CEi0XOg.i", false, false, true);
+INSERT INTO entidade (cnpj, end_logradouro, end_cidade, end_estado, end_cep, end_numero, nome_entidade, email, senha, Promotora, Patrocinadora, Organizadora) 
+VALUES (07755256000158, "Rua Aparecida", "Rio de Janeiro", "Rio de Janeiro", "94443-434", "37562", "RJ Eventos", "rjeventos@contato.br", "$2b$10$TM0wdHsCY4xZIe1BH/Jp0uny9Kr7Sv461myqmcaalJY8CEi0XOg.i", false, false, true);
 
 /* Inserção Dados Promotora */
 
@@ -356,24 +356,24 @@ INSERT INTO palestra (codigo_atividade, descricao, publico_alvo) VALUES (40, "Vi
 
 /* Inserção Dados Participante - Ouvinte e Palestrante */
 
-INSERT INTO participante (nome, cpf, cep, e_mail, telefone, Staff, Palestrante, Ouvinte, Organizador, Ministrante_tutoria, Instrutor, Avaliador, Autor_Artigo) 
-VALUES ("Kleberson Gonçalves", 43269456701, 34504231, "kleberson@contato.com", 458490931, false, true, true, false, false, false, false, false);
-INSERT INTO participante (nome, cpf, cep, e_mail, telefone, Staff, Palestrante, Ouvinte, Organizador, Ministrante_tutoria, Instrutor, Avaliador, Autor_Artigo) 
-VALUES ("Adelia Silva", 43269456702, 34504232, "adelia@contato.com", 458490932, false, true, true, false, false, false, false, false);
-INSERT INTO participante (nome, cpf, cep, e_mail, telefone, Staff, Palestrante, Ouvinte, Organizador, Ministrante_tutoria, Instrutor, Avaliador, Autor_Artigo) 
-VALUES ("Matheus Felix", 43269456703, 34504233, "matheus@contato.com", 458490933, false, true, true, false, false, false, false, false);
-INSERT INTO participante (nome, cpf, cep, e_mail, telefone, Staff, Palestrante, Ouvinte, Organizador, Ministrante_tutoria, Instrutor, Avaliador, Autor_Artigo) 
-VALUES ("Dayane Silva", 43269456704, 34504234, "dayane@contato.com", 458490934, false, true, true, false, false, false, false, false);
-INSERT INTO participante (nome, cpf, cep, e_mail, telefone, Staff, Palestrante, Ouvinte, Organizador, Ministrante_tutoria, Instrutor, Avaliador, Autor_Artigo) 
-VALUES ("Ricardo Pereira", 43269456705, 34504235, "Ricardo@contato.com", 458490935, false, true, true, false, false, false, false, false);
-INSERT INTO participante (nome, cpf, cep, e_mail, telefone, Staff, Palestrante, Ouvinte, Organizador, Ministrante_tutoria, Instrutor, Avaliador, Autor_Artigo) 
-VALUES ("Bianca Dias", 62207591338, 01014001, "biancadias@usp.br", 996324472, false, true, true, false, false, false, false, false);
-INSERT INTO participante (nome, cpf, cep, e_mail, telefone, Staff, Palestrante, Ouvinte, Organizador, Ministrante_tutoria, Instrutor, Avaliador, Autor_Artigo) 
-VALUES ("Helena Matsuda", 35712439866, 01015001, "hmatsuda@usp.br", 981650032, false, true, true, false, false, false, false, false);
-INSERT INTO participante (nome, cpf, cep, e_mail, telefone, Staff, Palestrante, Ouvinte, Organizador, Ministrante_tutoria, Instrutor, Avaliador, Autor_Artigo) 
-VALUES ("Luciana Karmizec", 39720465821, 01679001, "karmizec@usp.br", 945459966, false, true, true, false, false, false, false, false);
-INSERT INTO participante (nome, cpf, cep, e_mail, telefone, Staff, Palestrante, Ouvinte, Organizador, Ministrante_tutoria, Instrutor, Avaliador, Autor_Artigo) 
-VALUES ("Fernando Alburqueque", 29169407291, 01027001, "fernando.alburqueque@usp.br", 997246684, false, true, true, false, false, false, false, false);
+INSERT INTO participante (nome, cpf, cep, e_mail, senha, telefone, Staff, Palestrante, Ouvinte, Organizador, Ministrante_tutoria, Instrutor, Avaliador, Autor_Artigo) 
+VALUES ("Kleberson Gonçalves", 43269456701, 34504231, "kleberson@contato.com", "$2b$10$TM0wdHsCY4xZIe1BH/Jp0uny9Kr7Sv461myqmcaalJY8CEi0XOg.i", 458490931, false, true, true, false, false, false, false, false);
+INSERT INTO participante (nome, cpf, cep, e_mail, senha, telefone, Staff, Palestrante, Ouvinte, Organizador, Ministrante_tutoria, Instrutor, Avaliador, Autor_Artigo) 
+VALUES ("Adelia Silva", 43269456702, 34504232, "adelia@contato.com", "$2b$10$TM0wdHsCY4xZIe1BH/Jp0uny9Kr7Sv461myqmcaalJY8CEi0XOg.i", 458490932, false, true, true, false, false, false, false, false);
+INSERT INTO participante (nome, cpf, cep, e_mail, senha, telefone, Staff, Palestrante, Ouvinte, Organizador, Ministrante_tutoria, Instrutor, Avaliador, Autor_Artigo) 
+VALUES ("Matheus Felix", 43269456703, 34504233, "matheus@contato.com", "$2b$10$TM0wdHsCY4xZIe1BH/Jp0uny9Kr7Sv461myqmcaalJY8CEi0XOg.i", 458490933, false, true, true, false, false, false, false, false);
+INSERT INTO participante (nome, cpf, cep, e_mail, senha, telefone, Staff, Palestrante, Ouvinte, Organizador, Ministrante_tutoria, Instrutor, Avaliador, Autor_Artigo) 
+VALUES ("Dayane Silva", 43269456704, 34504234, "dayane@contato.com", "$2b$10$TM0wdHsCY4xZIe1BH/Jp0uny9Kr7Sv461myqmcaalJY8CEi0XOg.i", 458490934, false, true, true, false, false, false, false, false);
+INSERT INTO participante (nome, cpf, cep, e_mail, senha, telefone, Staff, Palestrante, Ouvinte, Organizador, Ministrante_tutoria, Instrutor, Avaliador, Autor_Artigo) 
+VALUES ("Ricardo Pereira", 43269456705, 34504235, "Ricardo@contato.com", "$2b$10$TM0wdHsCY4xZIe1BH/Jp0uny9Kr7Sv461myqmcaalJY8CEi0XOg.i", 458490935, false, true, true, false, false, false, false, false);
+INSERT INTO participante (nome, cpf, cep, e_mail, senha, telefone, Staff, Palestrante, Ouvinte, Organizador, Ministrante_tutoria, Instrutor, Avaliador, Autor_Artigo) 
+VALUES ("Bianca Dias", 62207591338, 01014001, "biancadias@usp.br", "$2b$10$TM0wdHsCY4xZIe1BH/Jp0uny9Kr7Sv461myqmcaalJY8CEi0XOg.i", 996324472, false, true, true, false, false, false, false, false);
+INSERT INTO participante (nome, cpf, cep, e_mail, senha, telefone, Staff, Palestrante, Ouvinte, Organizador, Ministrante_tutoria, Instrutor, Avaliador, Autor_Artigo) 
+VALUES ("Helena Matsuda", 35712439866, 01015001, "hmatsuda@usp.br", "$2b$10$TM0wdHsCY4xZIe1BH/Jp0uny9Kr7Sv461myqmcaalJY8CEi0XOg.i", 981650032, false, true, true, false, false, false, false, false);
+INSERT INTO participante (nome, cpf, cep, e_mail, senha, telefone, Staff, Palestrante, Ouvinte, Organizador, Ministrante_tutoria, Instrutor, Avaliador, Autor_Artigo) 
+VALUES ("Luciana Karmizec", 39720465821, 01679001, "karmizec@usp.br", "$2b$10$TM0wdHsCY4xZIe1BH/Jp0uny9Kr7Sv461myqmcaalJY8CEi0XOg.i", 945459966, false, true, true, false, false, false, false, false);
+INSERT INTO participante (nome, cpf, cep, e_mail, senha, telefone, Staff, Palestrante, Ouvinte, Organizador, Ministrante_tutoria, Instrutor, Avaliador, Autor_Artigo) 
+VALUES ("Fernando Alburqueque", 29169407291, 01027001, "fernando.alburqueque@usp.br", "$2b$10$TM0wdHsCY4xZIe1BH/Jp0uny9Kr7Sv461myqmcaalJY8CEi0XOg.i", 997246684, false, true, true, false, false, false, false, false);
 
 /* Inserção Dados Palestrante */
 
@@ -385,16 +385,16 @@ INSERT INTO palestrante (cpf, filiacao, minicurriculo) VALUES (43269456705, "AMA
 
 /* Inserção Dados Participante - Ouvinte e Instrutor */
 
-INSERT INTO participante (nome, cpf, cep, e_mail, telefone, Staff, Palestrante, Ouvinte, Organizador, Ministrante_tutoria, Instrutor, Avaliador, Autor_Artigo) 
-VALUES ("Kleber Silva", 43269456706, 34504236, "kleber@contato.com", 458490936, false, false, true, false, false, true, false, false);
-INSERT INTO participante (nome, cpf, cep, e_mail, telefone, Staff, Palestrante, Ouvinte, Organizador, Ministrante_tutoria, Instrutor, Avaliador, Autor_Artigo) 
-VALUES ("Marjure Gonçalves", 43269456707, 34504237, "marjure@contato.com", 458490937, false, false, true, false, false, true, false, false);
-INSERT INTO participante (nome, cpf, cep, e_mail, telefone, Staff, Palestrante, Ouvinte, Organizador, Ministrante_tutoria, Instrutor, Avaliador, Autor_Artigo) 
-VALUES ("André Felix", 43269456708, 34504238, "andre@contato.com", 458490938, false, false, true, false, false, true, false, false);
-INSERT INTO participante (nome, cpf, cep, e_mail, telefone, Staff, Palestrante, Ouvinte, Organizador, Ministrante_tutoria, Instrutor, Avaliador, Autor_Artigo) 
-VALUES ("Victoria Silva", 43269456709, 34504239, "victoria@contato.com", 458490939, false, false, true, false, false, true, false, false);
-INSERT INTO participante (nome, cpf, cep, e_mail, telefone, Staff, Palestrante, Ouvinte, Organizador, Ministrante_tutoria, Instrutor, Avaliador, Autor_Artigo) 
-VALUES ("Reginaldo Pereira", 43269456710, 34504240, "Reginaldo@contato.com", 458490940, false, false, true, false, false, true, false, false);
+INSERT INTO participante (nome, cpf, cep, e_mail, senha, telefone, Staff, Palestrante, Ouvinte, Organizador, Ministrante_tutoria, Instrutor, Avaliador, Autor_Artigo) 
+VALUES ("Kleber Silva", 43269456706, 34504236, "kleber@contato.com", "$2b$10$TM0wdHsCY4xZIe1BH/Jp0uny9Kr7Sv461myqmcaalJY8CEi0XOg.i", 458490936, false, false, true, false, false, true, false, false);
+INSERT INTO participante (nome, cpf, cep, e_mail, senha, telefone, Staff, Palestrante, Ouvinte, Organizador, Ministrante_tutoria, Instrutor, Avaliador, Autor_Artigo) 
+VALUES ("Marjure Gonçalves", 43269456707, 34504237, "marjure@contato.com", "$2b$10$TM0wdHsCY4xZIe1BH/Jp0uny9Kr7Sv461myqmcaalJY8CEi0XOg.i", 458490937, false, false, true, false, false, true, false, false);
+INSERT INTO participante (nome, cpf, cep, e_mail, senha, telefone, Staff, Palestrante, Ouvinte, Organizador, Ministrante_tutoria, Instrutor, Avaliador, Autor_Artigo) 
+VALUES ("André Felix", 43269456708, 34504238, "andre@contato.com", "$2b$10$TM0wdHsCY4xZIe1BH/Jp0uny9Kr7Sv461myqmcaalJY8CEi0XOg.i", 458490938, false, false, true, false, false, true, false, false);
+INSERT INTO participante (nome, cpf, cep, e_mail, senha, telefone, Staff, Palestrante, Ouvinte, Organizador, Ministrante_tutoria, Instrutor, Avaliador, Autor_Artigo) 
+VALUES ("Victoria Silva", 43269456709, 34504239, "victoria@contato.com", "$2b$10$TM0wdHsCY4xZIe1BH/Jp0uny9Kr7Sv461myqmcaalJY8CEi0XOg.i", 458490939, false, false, true, false, false, true, false, false);
+INSERT INTO participante (nome, cpf, cep, e_mail, senha, telefone, Staff, Palestrante, Ouvinte, Organizador, Ministrante_tutoria, Instrutor, Avaliador, Autor_Artigo) 
+VALUES ("Reginaldo Pereira", 43269456710, 34504240, "Reginaldo@contato.com", "$2b$10$TM0wdHsCY4xZIe1BH/Jp0uny9Kr7Sv461myqmcaalJY8CEi0XOg.i", 458490940, false, false, true, false, false, true, false, false);
 
 /* Inserção Dados Instrutor */
 
@@ -406,16 +406,16 @@ INSERT INTO instrutor (cpf) VALUES (43269456710);
 
 /* Inserção Dados Participante - Staff */
 
-INSERT INTO participante (nome, cpf, cep, e_mail, telefone, Staff, Palestrante, Ouvinte, Organizador, Ministrante_tutoria, Instrutor, Avaliador, Autor_Artigo) 
-VALUES ("Amanda Silva", 43269456711, 34504241, "amanda@contato.com", 458490941, true, false, false, false, false, false, false, false);
-INSERT INTO participante (nome, cpf, cep, e_mail, telefone, Staff, Palestrante, Ouvinte, Organizador, Ministrante_tutoria, Instrutor, Avaliador, Autor_Artigo) 
-VALUES ("Adriana Gonçalves", 43269456712, 34504242, "adriana@contato.com", 458490942, true, false, false, false, false, false, false, false);
-INSERT INTO participante (nome, cpf, cep, e_mail, telefone, Staff, Palestrante, Ouvinte, Organizador, Ministrante_tutoria, Instrutor, Avaliador, Autor_Artigo) 
-VALUES ("Bianca Felix", 43269456713, 34504243, "bianca@contato.com", 458490943, true, false, false, false, false, false, false, false);
-INSERT INTO participante (nome, cpf, cep, e_mail, telefone, Staff, Palestrante, Ouvinte, Organizador, Ministrante_tutoria, Instrutor, Avaliador, Autor_Artigo) 
-VALUES ("Barbara Silva", 43269456714, 34504244, "barbara@contato.com", 458490944, true, false, false, false, false, false, false, false);
-INSERT INTO participante (nome, cpf, cep, e_mail, telefone, Staff, Palestrante, Ouvinte, Organizador, Ministrante_tutoria, Instrutor, Avaliador, Autor_Artigo) 
-VALUES ("Bruna Pereira", 43269456715, 34504245, "bruna@contato.com", 458490945, true, false, false, false, false, false, false, false);
+INSERT INTO participante (nome, cpf, cep, e_mail, senha, telefone, Staff, Palestrante, Ouvinte, Organizador, Ministrante_tutoria, Instrutor, Avaliador, Autor_Artigo) 
+VALUES ("Amanda Silva", 43269456711, 34504241, "amanda@contato.com", "$2b$10$TM0wdHsCY4xZIe1BH/Jp0uny9Kr7Sv461myqmcaalJY8CEi0XOg.i", 458490941, true, false, false, false, false, false, false, false);
+INSERT INTO participante (nome, cpf, cep, e_mail, senha, telefone, Staff, Palestrante, Ouvinte, Organizador, Ministrante_tutoria, Instrutor, Avaliador, Autor_Artigo) 
+VALUES ("Adriana Gonçalves", 43269456712, 34504242, "adriana@contato.com", "$2b$10$TM0wdHsCY4xZIe1BH/Jp0uny9Kr7Sv461myqmcaalJY8CEi0XOg.i", 458490942, true, false, false, false, false, false, false, false);
+INSERT INTO participante (nome, cpf, cep, e_mail, senha, telefone, Staff, Palestrante, Ouvinte, Organizador, Ministrante_tutoria, Instrutor, Avaliador, Autor_Artigo) 
+VALUES ("Bianca Felix", 43269456713, 34504243, "bianca@contato.com", "$2b$10$TM0wdHsCY4xZIe1BH/Jp0uny9Kr7Sv461myqmcaalJY8CEi0XOg.i", 458490943, true, false, false, false, false, false, false, false);
+INSERT INTO participante (nome, cpf, cep, e_mail, senha, telefone, Staff, Palestrante, Ouvinte, Organizador, Ministrante_tutoria, Instrutor, Avaliador, Autor_Artigo) 
+VALUES ("Barbara Silva", 43269456714, 34504244, "barbara@contato.com", "$2b$10$TM0wdHsCY4xZIe1BH/Jp0uny9Kr7Sv461myqmcaalJY8CEi0XOg.i", 458490944, true, false, false, false, false, false, false, false);
+INSERT INTO participante (nome, cpf, cep, e_mail, senha, telefone, Staff, Palestrante, Ouvinte, Organizador, Ministrante_tutoria, Instrutor, Avaliador, Autor_Artigo) 
+VALUES ("Bruna Pereira", 43269456715, 34504245, "bruna@contato.com", "$2b$10$TM0wdHsCY4xZIe1BH/Jp0uny9Kr7Sv461myqmcaalJY8CEi0XOg.i", 458490945, true, false, false, false, false, false, false, false);
 
 /* Inserção Dados Staff */
 
@@ -427,29 +427,29 @@ INSERT INTO staff (cpf) VALUES (43269456715);
 
 /* Inserção Dados Participante - Organizador */
 
-INSERT INTO participante (nome, cpf, cep, e_mail, telefone, Staff, Palestrante, Ouvinte, Organizador, Ministrante_tutoria, Instrutor, Avaliador, Autor_Artigo) 
-VALUES ("Carol Silva", 43269456716, 34504246, "carol@contato.com", 458490946, false, false, false, true, false, false, false, false);
-INSERT INTO participante (nome, cpf, cep, e_mail, telefone, Staff, Palestrante, Ouvinte, Organizador, Ministrante_tutoria, Instrutor, Avaliador, Autor_Artigo) 
-VALUES ("Eduardo Gonçalves", 43269456717, 34504247, "eduardo@contato.com", 458490947, false, false, false, true, false, false, false, false);
-INSERT INTO participante (nome, cpf, cep, e_mail, telefone, Staff, Palestrante, Ouvinte, Organizador, Ministrante_tutoria, Instrutor, Avaliador, Autor_Artigo) 
-VALUES ("Eduarda Felix", 43269456718, 34504248, "eduarda@contato.com", 458490948, false, false, false, true, false, false, false, false);
-INSERT INTO participante (nome, cpf, cep, e_mail, telefone, Staff, Palestrante, Ouvinte, Organizador, Ministrante_tutoria, Instrutor, Avaliador, Autor_Artigo) 
-VALUES ("Edmundo Silva", 43269456719, 34504249, "edmundo@contato.com", 458490949, false, false, false, true, false, false, false, false);
-INSERT INTO participante (nome, cpf, cep, e_mail, telefone, Staff, Palestrante, Ouvinte, Organizador, Ministrante_tutoria, Instrutor, Avaliador, Autor_Artigo) 
-VALUES ("Felipe Pereira", 43269456720, 34504250, "felipe@contato.com", 458490950, false, false, false, true, false, false, false, false);
+INSERT INTO participante (nome, cpf, cep, e_mail, senha, telefone, Staff, Palestrante, Ouvinte, Organizador, Ministrante_tutoria, Instrutor, Avaliador, Autor_Artigo) 
+VALUES ("Carol Silva", 43269456716, 34504246, "carol@contato.com", "$2b$10$TM0wdHsCY4xZIe1BH/Jp0uny9Kr7Sv461myqmcaalJY8CEi0XOg.i", 458490946, false, false, false, true, false, false, false, false);
+INSERT INTO participante (nome, cpf, cep, e_mail, senha, telefone, Staff, Palestrante, Ouvinte, Organizador, Ministrante_tutoria, Instrutor, Avaliador, Autor_Artigo) 
+VALUES ("Eduardo Gonçalves", 43269456717, 34504247, "eduardo@contato.com", "$2b$10$TM0wdHsCY4xZIe1BH/Jp0uny9Kr7Sv461myqmcaalJY8CEi0XOg.i", 458490947, false, false, false, true, false, false, false, false);
+INSERT INTO participante (nome, cpf, cep, e_mail, senha, telefone, Staff, Palestrante, Ouvinte, Organizador, Ministrante_tutoria, Instrutor, Avaliador, Autor_Artigo) 
+VALUES ("Eduarda Felix", 43269456718, 34504248, "eduarda@contato.com", "$2b$10$TM0wdHsCY4xZIe1BH/Jp0uny9Kr7Sv461myqmcaalJY8CEi0XOg.i", 458490948, false, false, false, true, false, false, false, false);
+INSERT INTO participante (nome, cpf, cep, e_mail, senha, telefone, Staff, Palestrante, Ouvinte, Organizador, Ministrante_tutoria, Instrutor, Avaliador, Autor_Artigo) 
+VALUES ("Edmundo Silva", 43269456719, 34504249, "edmundo@contato.com", "$2b$10$TM0wdHsCY4xZIe1BH/Jp0uny9Kr7Sv461myqmcaalJY8CEi0XOg.i", 458490949, false, false, false, true, false, false, false, false);
+INSERT INTO participante (nome, cpf, cep, e_mail, senha, telefone, Staff, Palestrante, Ouvinte, Organizador, Ministrante_tutoria, Instrutor, Avaliador, Autor_Artigo) 
+VALUES ("Felipe Pereira", 43269456720, 34504250, "felipe@contato.com", "$2b$10$TM0wdHsCY4xZIe1BH/Jp0uny9Kr7Sv461myqmcaalJY8CEi0XOg.i", 458490950, false, false, false, true, false, false, false, false);
 
 /* Inserção Dados Participante - Ministrante_tutoria */
 
-INSERT INTO participante (nome, cpf, cep, e_mail, telefone, Staff, Palestrante, Ouvinte, Organizador, Ministrante_tutoria, Instrutor, Avaliador, Autor_Artigo) 
-VALUES ("Felix Silva", 43269456721, 34504251, "felix@contato.com", 458490951, false, false, false, false, true, false, false, false);
-INSERT INTO participante (nome, cpf, cep, e_mail, telefone, Staff, Palestrante, Ouvinte, Organizador, Ministrante_tutoria, Instrutor, Avaliador, Autor_Artigo) 
-VALUES ("Fernando Gonçalves", 43269456722, 34504252, "fernando@contato.com", 458490952, false, false, false, false, true, false, false, false);
-INSERT INTO participante (nome, cpf, cep, e_mail, telefone, Staff, Palestrante, Ouvinte, Organizador, Ministrante_tutoria, Instrutor, Avaliador, Autor_Artigo) 
-VALUES ("Fernanda Felix", 43269456723, 34504253, "fernanda@contato.com", 458490953, false, false, false, false, true, false, false, false);
-INSERT INTO participante (nome, cpf, cep, e_mail, telefone, Staff, Palestrante, Ouvinte, Organizador, Ministrante_tutoria, Instrutor, Avaliador, Autor_Artigo) 
-VALUES ("Fátima Silva", 43269456724, 34504254, "fátima@contato.com", 458490954, false, false, false, false, true, false, false, false);
-INSERT INTO participante (nome, cpf, cep, e_mail, telefone, Staff, Palestrante, Ouvinte, Organizador, Ministrante_tutoria, Instrutor, Avaliador, Autor_Artigo) 
-VALUES ("Fagner Pereira", 43269456725, 34504255, "fagner@contato.com", 458490955, false, false, false, false, true, false, false, false);
+INSERT INTO participante (nome, cpf, cep, e_mail, senha, telefone, Staff, Palestrante, Ouvinte, Organizador, Ministrante_tutoria, Instrutor, Avaliador, Autor_Artigo) 
+VALUES ("Felix Silva", 43269456721, 34504251, "felix@contato.com", "$2b$10$TM0wdHsCY4xZIe1BH/Jp0uny9Kr7Sv461myqmcaalJY8CEi0XOg.i", 458490951, false, false, false, false, true, false, false, false);
+INSERT INTO participante (nome, cpf, cep, e_mail, senha, telefone, Staff, Palestrante, Ouvinte, Organizador, Ministrante_tutoria, Instrutor, Avaliador, Autor_Artigo) 
+VALUES ("Fernando Gonçalves", 43269456722, 34504252, "fernando@contato.com", "$2b$10$TM0wdHsCY4xZIe1BH/Jp0uny9Kr7Sv461myqmcaalJY8CEi0XOg.i", 458490952, false, false, false, false, true, false, false, false);
+INSERT INTO participante (nome, cpf, cep, e_mail, senha, telefone, Staff, Palestrante, Ouvinte, Organizador, Ministrante_tutoria, Instrutor, Avaliador, Autor_Artigo) 
+VALUES ("Fernanda Felix", 43269456723, 34504253, "fernanda@contato.com", "$2b$10$TM0wdHsCY4xZIe1BH/Jp0uny9Kr7Sv461myqmcaalJY8CEi0XOg.i", 458490953, false, false, false, false, true, false, false, false);
+INSERT INTO participante (nome, cpf, cep, e_mail, senha, telefone, Staff, Palestrante, Ouvinte, Organizador, Ministrante_tutoria, Instrutor, Avaliador, Autor_Artigo) 
+VALUES ("Fátima Silva", 43269456724, 34504254, "fátima@contato.com", "$2b$10$TM0wdHsCY4xZIe1BH/Jp0uny9Kr7Sv461myqmcaalJY8CEi0XOg.i", 458490954, false, false, false, false, true, false, false, false);
+INSERT INTO participante (nome, cpf, cep, e_mail, senha, telefone, Staff, Palestrante, Ouvinte, Organizador, Ministrante_tutoria, Instrutor, Avaliador, Autor_Artigo) 
+VALUES ("Fagner Pereira", 43269456725, 34504255, "fagner@contato.com", "$2b$10$TM0wdHsCY4xZIe1BH/Jp0uny9Kr7Sv461myqmcaalJY8CEi0XOg.i", 458490955, false, false, false, false, true, false, false, false);
 
 /* Inserção Dados Ministrante_Tutoria */
 
@@ -461,16 +461,16 @@ INSERT INTO ministrante_tutoria (cpf, afiliacao, minicurriculo) VALUES (43269456
 
 /* Inserção Dados Participante - avaliador */
 
-INSERT INTO participante (nome, cpf, cep, e_mail, telefone, Staff, Palestrante, Ouvinte, Organizador, Ministrante_tutoria, Instrutor, Avaliador, Autor_Artigo) 
-VALUES ("Gabriel Silva", 43269456726, 34504256, "gabriel@contato.com", 458490956, false, false, false, false, false, false, true, false);
-INSERT INTO participante (nome, cpf, cep, e_mail, telefone, Staff, Palestrante, Ouvinte, Organizador, Ministrante_tutoria, Instrutor, Avaliador, Autor_Artigo) 
-VALUES ("Gabriela Gonçalves", 43269456727, 34504257, "gabriela@contato.com", 458490957, false, false, false, false, false, false, true, false);
-INSERT INTO participante (nome, cpf, cep, e_mail, telefone, Staff, Palestrante, Ouvinte, Organizador, Ministrante_tutoria, Instrutor, Avaliador, Autor_Artigo) 
-VALUES ("Gustavo Felix", 43269456728, 34504258, "gustavo@contato.com", 458490958, false, false, false, false, false, false, true, false);
-INSERT INTO participante (nome, cpf, cep, e_mail, telefone, Staff, Palestrante, Ouvinte, Organizador, Ministrante_tutoria, Instrutor, Avaliador, Autor_Artigo) 
-VALUES ("Giovanna Silva", 43269456729, 34504259, "giovanna@contato.com", 458490959, false, false, false, false, false, false, true, false);
-INSERT INTO participante (nome, cpf, cep, e_mail, telefone, Staff, Palestrante, Ouvinte, Organizador, Ministrante_tutoria, Instrutor, Avaliador, Autor_Artigo) 
-VALUES ("Giovanne Pereira", 43269456730, 34504260, "giovanne@contato.com", 458490960, false, false, false, false, false, false, true, false);
+INSERT INTO participante (nome, cpf, cep, e_mail, senha, telefone, Staff, Palestrante, Ouvinte, Organizador, Ministrante_tutoria, Instrutor, Avaliador, Autor_Artigo) 
+VALUES ("Gabriel Silva", 43269456726, 34504256, "gabriel@contato.com", "$2b$10$TM0wdHsCY4xZIe1BH/Jp0uny9Kr7Sv461myqmcaalJY8CEi0XOg.i", 458490956, false, false, false, false, false, false, true, false);
+INSERT INTO participante (nome, cpf, cep, e_mail, senha, telefone, Staff, Palestrante, Ouvinte, Organizador, Ministrante_tutoria, Instrutor, Avaliador, Autor_Artigo) 
+VALUES ("Gabriela Gonçalves", 43269456727, 34504257, "gabriela@contato.com", "$2b$10$TM0wdHsCY4xZIe1BH/Jp0uny9Kr7Sv461myqmcaalJY8CEi0XOg.i", 458490957, false, false, false, false, false, false, true, false);
+INSERT INTO participante (nome, cpf, cep, e_mail, senha, telefone, Staff, Palestrante, Ouvinte, Organizador, Ministrante_tutoria, Instrutor, Avaliador, Autor_Artigo) 
+VALUES ("Gustavo Felix", 43269456728, 34504258, "gustavo@contato.com", "$2b$10$TM0wdHsCY4xZIe1BH/Jp0uny9Kr7Sv461myqmcaalJY8CEi0XOg.i", 458490958, false, false, false, false, false, false, true, false);
+INSERT INTO participante (nome, cpf, cep, e_mail, senha, telefone, Staff, Palestrante, Ouvinte, Organizador, Ministrante_tutoria, Instrutor, Avaliador, Autor_Artigo) 
+VALUES ("Giovanna Silva", 43269456729, 34504259, "giovanna@contato.com", "$2b$10$TM0wdHsCY4xZIe1BH/Jp0uny9Kr7Sv461myqmcaalJY8CEi0XOg.i", 458490959, false, false, false, false, false, false, true, false);
+INSERT INTO participante (nome, cpf, cep, e_mail, senha, telefone, Staff, Palestrante, Ouvinte, Organizador, Ministrante_tutoria, Instrutor, Avaliador, Autor_Artigo) 
+VALUES ("Giovanne Pereira", 43269456730, 34504260, "giovanne@contato.com", "$2b$10$TM0wdHsCY4xZIe1BH/Jp0uny9Kr7Sv461myqmcaalJY8CEi0XOg.i", 458490960, false, false, false, false, false, false, true, false);
 
 /* Inserção Avaliador */
 
@@ -482,16 +482,16 @@ INSERT INTO avaliador (cpf) VALUES (43269456730);
 
 /* Inserção Dados Participante - Ouvinte e Autor_Artigo */
 
-INSERT INTO participante (nome, cpf, cep, e_mail, telefone, Staff, Palestrante, Ouvinte, Organizador, Ministrante_tutoria, Instrutor, Avaliador, Autor_Artigo) 
-VALUES ("Hannah Silva", 43269456731, 34504261, "hannah@contato.com", 458490961, false, false, true, false, false, false, false, true);
-INSERT INTO participante (nome, cpf, cep, e_mail, telefone, Staff, Palestrante, Ouvinte, Organizador, Ministrante_tutoria, Instrutor, Avaliador, Autor_Artigo) 
-VALUES ("Helise Gonçalves", 43269456732, 34504262, "helise@contato.com", 458490962, false, false, true, false, false, false, false, true);
-INSERT INTO participante (nome, cpf, cep, e_mail, telefone, Staff, Palestrante, Ouvinte, Organizador, Ministrante_tutoria, Instrutor, Avaliador, Autor_Artigo) 
-VALUES ("Heliana Felix", 43269456733, 34504263, "heliana@contato.com", 458490963, false, false, true, false, false, false, false, true);
-INSERT INTO participante (nome, cpf, cep, e_mail, telefone, Staff, Palestrante, Ouvinte, Organizador, Ministrante_tutoria, Instrutor, Avaliador, Autor_Artigo) 
-VALUES ("Helio Silva", 43269456734, 34504264, "helio@contato.com", 458490964, false, false, true, false, false, false, false, true);
-INSERT INTO participante (nome, cpf, cep, e_mail, telefone, Staff, Palestrante, Ouvinte, Organizador, Ministrante_tutoria, Instrutor, Avaliador, Autor_Artigo) 
-VALUES ("Ian Pereira", 43269456735, 34504265, "ian@contato.com", 458490965, false, false, true, false, false, false, false, true);
+INSERT INTO participante (nome, cpf, cep, e_mail, senha, telefone, Staff, Palestrante, Ouvinte, Organizador, Ministrante_tutoria, Instrutor, Avaliador, Autor_Artigo) 
+VALUES ("Hannah Silva", 43269456731, 34504261, "hannah@contato.com", "$2b$10$TM0wdHsCY4xZIe1BH/Jp0uny9Kr7Sv461myqmcaalJY8CEi0XOg.i", 458490961, false, false, true, false, false, false, false, true);
+INSERT INTO participante (nome, cpf, cep, e_mail, senha, telefone, Staff, Palestrante, Ouvinte, Organizador, Ministrante_tutoria, Instrutor, Avaliador, Autor_Artigo) 
+VALUES ("Helise Gonçalves", 43269456732, 34504262, "helise@contato.com", "$2b$10$TM0wdHsCY4xZIe1BH/Jp0uny9Kr7Sv461myqmcaalJY8CEi0XOg.i", 458490962, false, false, true, false, false, false, false, true);
+INSERT INTO participante (nome, cpf, cep, e_mail, senha, telefone, Staff, Palestrante, Ouvinte, Organizador, Ministrante_tutoria, Instrutor, Avaliador, Autor_Artigo) 
+VALUES ("Heliana Felix", 43269456733, 34504263, "heliana@contato.com", "$2b$10$TM0wdHsCY4xZIe1BH/Jp0uny9Kr7Sv461myqmcaalJY8CEi0XOg.i", 458490963, false, false, true, false, false, false, false, true);
+INSERT INTO participante (nome, cpf, cep, e_mail, senha, telefone, Staff, Palestrante, Ouvinte, Organizador, Ministrante_tutoria, Instrutor, Avaliador, Autor_Artigo) 
+VALUES ("Helio Silva", 43269456734, 34504264, "helio@contato.com", "$2b$10$TM0wdHsCY4xZIe1BH/Jp0uny9Kr7Sv461myqmcaalJY8CEi0XOg.i", 458490964, false, false, true, false, false, false, false, true);
+INSERT INTO participante (nome, cpf, cep, e_mail, senha, telefone, Staff, Palestrante, Ouvinte, Organizador, Ministrante_tutoria, Instrutor, Avaliador, Autor_Artigo) 
+VALUES ("Ian Pereira", 43269456735, 34504265, "ian@contato.com", "$2b$10$TM0wdHsCY4xZIe1BH/Jp0uny9Kr7Sv461myqmcaalJY8CEi0XOg.i", 458490965, false, false, true, false, false, false, false, true);
 
 /* Inserção Dados Autor_Artigo */
 
@@ -685,8 +685,6 @@ INSERT INTO inscreve (codigo_atividade, cpf) VALUES (39 , 43269456707);
 INSERT INTO inscreve (codigo_atividade, cpf) VALUES (40 , 43269456707);
 INSERT INTO inscreve (codigo_atividade, cpf) VALUES (1 , 43269456708);
 INSERT INTO inscreve (codigo_atividade, cpf) VALUES (7 , 43269456708);
-INSERT INTO inscreve (codigo_atividade, cpf) VALUES (20 , 43269456708);
-INSERT INTO inscreve (codigo_atividade, cpf) VALUES (22 , 43269456708);
 INSERT INTO inscreve (codigo_atividade, cpf) VALUES (27 , 43269456708);
 INSERT INTO inscreve (codigo_atividade, cpf) VALUES (29 , 43269456708);
 INSERT INTO inscreve (codigo_atividade, cpf) VALUES (33 , 43269456708);
@@ -722,7 +720,6 @@ INSERT INTO inscreve (codigo_atividade, cpf) VALUES (39 , 43269456732);
 INSERT INTO inscreve (codigo_atividade, cpf) VALUES (40 , 43269456732);
 INSERT INTO inscreve (codigo_atividade, cpf) VALUES (1 , 43269456733);
 INSERT INTO inscreve (codigo_atividade, cpf) VALUES (7 , 43269456733);
-INSERT INTO inscreve (codigo_atividade, cpf) VALUES (22 , 43269456733);
 INSERT INTO inscreve (codigo_atividade, cpf) VALUES (27 , 43269456733);
 INSERT INTO inscreve (codigo_atividade, cpf) VALUES (28 , 43269456733);
 INSERT INTO inscreve (codigo_atividade, cpf) VALUES (33 , 43269456733);
@@ -871,11 +868,11 @@ INSERT INTO representa(cnpj, cpf_representante) VALUES (07755256000158, 53269456
 
 /*Patrocinadora e Patrocina*/
 
-INSERT INTO entidade (cnpj, end_logradouro, end_cidade, end_estado, end_cep, end_numero, nome_entidade, email, Promotora, Patrocinadora, Organizadora) VALUES (17359434000511, "Avenida Paulista", "São Paulo", "São Paulo", "01310-940", "900", "Pneus S.A", "pneus@contato.br", false, true, false);
-INSERT INTO entidade (cnpj, end_logradouro, end_cidade, end_estado, end_cep, end_numero, nome_entidade, email, Promotora, Patrocinadora, Organizadora) VALUES (22259434000333, "Avenida Brigadeiro Faria Lima", "São Paulo", "São Paulo", "05426-200", "1000", "Planos de Saude S.A", "saude@contato.br", false, true, false);
-INSERT INTO entidade (cnpj, end_logradouro, end_cidade, end_estado, end_cep, end_numero, nome_entidade, email, Promotora, Patrocinadora, Organizadora) VALUES (12359434000321, "Avenida Pompéia", "São Paulo", "São Paulo", "05022-000", "1030", "Tecnologia e Segurança Privada S.A", "tecseguranca@contato.br", false, true, false);
-INSERT INTO entidade (cnpj, end_logradouro, end_cidade, end_estado, end_cep, end_numero, nome_entidade, email, Promotora, Patrocinadora, Organizadora) VALUES (55559434000432, "Avenida Alcântara Machado", "São Paulo", "São Paulo", "03302-000", "3456", "Elétrica Segurança", "eletricsecurity@contato.br", false, true, false);
-INSERT INTO entidade (cnpj, end_logradouro, end_cidade, end_estado, end_cep, end_numero, nome_entidade, email, Promotora, Patrocinadora, Organizadora) VALUES (25559434000522, "Avenida Assis Ribeiro", "São Paulo", "São Paulo", "03717-002", "1600", "Carreta Furacão Siga em Frente", "carretaEventos@contato.br", false, true, false);
+INSERT INTO entidade (cnpj, end_logradouro, end_cidade, end_estado, end_cep, end_numero, nome_entidade, email, senha, Promotora, Patrocinadora, Organizadora) VALUES (17359434000511, "Avenida Paulista", "São Paulo", "São Paulo", "01310-940", "900", "Pneus S.A", "pneus@contato.br", "$2b$10$TM0wdHsCY4xZIe1BH/Jp0uny9Kr7Sv461myqmcaalJY8CEi0XOg.i", false, true, false);
+INSERT INTO entidade (cnpj, end_logradouro, end_cidade, end_estado, end_cep, end_numero, nome_entidade, email, senha, Promotora, Patrocinadora, Organizadora) VALUES (22259434000333, "Avenida Brigadeiro Faria Lima", "São Paulo", "São Paulo", "05426-200", "1000", "Planos de Saude S.A", "saude@contato.br", "$2b$10$TM0wdHsCY4xZIe1BH/Jp0uny9Kr7Sv461myqmcaalJY8CEi0XOg.i", false, true, false);
+INSERT INTO entidade (cnpj, end_logradouro, end_cidade, end_estado, end_cep, end_numero, nome_entidade, email, senha, Promotora, Patrocinadora, Organizadora) VALUES (12359434000321, "Avenida Pompéia", "São Paulo", "São Paulo", "05022-000", "1030", "Tecnologia e Segurança Privada S.A", "tecseguranca@contato.br", "$2b$10$TM0wdHsCY4xZIe1BH/Jp0uny9Kr7Sv461myqmcaalJY8CEi0XOg.i", false, true, false);
+INSERT INTO entidade (cnpj, end_logradouro, end_cidade, end_estado, end_cep, end_numero, nome_entidade, email, senha, Promotora, Patrocinadora, Organizadora) VALUES (55559434000432, "Avenida Alcântara Machado", "São Paulo", "São Paulo", "03302-000", "3456", "Elétrica Segurança", "eletricsecurity@contato.br", "$2b$10$TM0wdHsCY4xZIe1BH/Jp0uny9Kr7Sv461myqmcaalJY8CEi0XOg.i", false, true, false);
+INSERT INTO entidade (cnpj, end_logradouro, end_cidade, end_estado, end_cep, end_numero, nome_entidade, email, senha, Promotora, Patrocinadora, Organizadora) VALUES (25559434000522, "Avenida Assis Ribeiro", "São Paulo", "São Paulo", "03717-002", "1600", "Carreta Furacão Siga em Frente", "carretaEventos@contato.br", "$2b$10$TM0wdHsCY4xZIe1BH/Jp0uny9Kr7Sv461myqmcaalJY8CEi0XOg.i", false, true, false);
 
 INSERT INTO patrocinadora(cnpj) VALUES (17359434000511);
 INSERT INTO patrocinadora(cnpj) VALUES (22259434000333);
@@ -925,7 +922,7 @@ INSERT INTO rede_social(nome, url, usuario, id_evento,cnpj) VALUES ('LinkedIn','
 /* Inserção Parte 5 */
 
 /* Inserção Dados Organizador */
-use eventos_cientificos;
+
 INSERT INTO organizador (cpf, remuneracao, carga_horaria) VALUES 
 	(43269456716, 700.00, 8.00),
     (43269456717, 750.00, 8.00),
