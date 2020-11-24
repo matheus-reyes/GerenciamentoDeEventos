@@ -21,6 +21,22 @@ html{
     margin: 30px 0 30px 0;
 }
 
+/* Links */
+
+a:link{
+    color:rgb(96, 195, 171);
+}
+
+a:hover{
+    text-decoration:none;
+    color: rgb(96, 195, 171, 0.5);
+}
+
+a:visited{
+    color:rgb(96, 195, 171);
+}
+
+
 /* Imagens */
 
 .img{

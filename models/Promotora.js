@@ -5,8 +5,7 @@ let Promotora = (sequelize, Datatypes) => {
             cnpj:{
                 type: Datatypes.BIGINT,
                 primaryKey: true,
-                allowNull: false,
-                autoIncrement: true
+                allowNull: false
             }
         },
         {
