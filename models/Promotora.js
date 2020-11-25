@@ -5,8 +5,7 @@ let Promotora = (sequelize, Datatypes) => {
             cnpj:{
                 type: Datatypes.BIGINT,
                 primaryKey: true,
-                allowNull: false,
-                autoIncrement: true
+                allowNull: false
             }
         },
         {
@@ -22,6 +21,14 @@ let Promotora = (sequelize, Datatypes) => {
             {
                 foreignKey: 'PRO_cnpj',
                 as: 'promotora'
+            }
+        );
+
+        promotora.belongsTo(
+            models.Entidade, 
+            {
+                foreignKey: 'cnpj',
+                as: 'entidade'
             }
         );
 

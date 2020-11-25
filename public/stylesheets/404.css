@@ -11,6 +11,22 @@
     margin-top:5%;
 }
 
+/* Links */
+
+a:link{
+    color:rgb(96, 195, 171);
+}
+
+a:hover{
+    text-decoration:none;
+    color: rgb(96, 195, 171, 0.5);
+}
+
+a:visited{
+    color:rgb(96, 195, 171);
+}
+
+
 /* Texto de Aviso */
 
 .texto404{

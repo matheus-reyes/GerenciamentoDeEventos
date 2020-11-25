@@ -5,8 +5,7 @@ let Participante = (sequelize, Datatypes) => {
             cpf:{
                 type: Datatypes.BIGINT,
                 primaryKey: true,
-                allowNull: false,
-                autoIncrement: true
+                allowNull: false
             },
             nome:{
                 type: Datatypes.STRING,
@@ -17,6 +16,10 @@ let Participante = (sequelize, Datatypes) => {
                 allowNull: false
             },
             e_mail:{
+                type: Datatypes.STRING,
+                allowNull: false
+            },
+            senha:{
                 type: Datatypes.STRING,
                 allowNull: false
             },
