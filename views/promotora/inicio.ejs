@@ -18,7 +18,7 @@
     <header class="align-self-center shadow-sm p-3 mb-5 bg-white rounded">
         <div id="container" class="container">
             <div class="row">
-                <h2 class="titulo"> Início Promotora </h2>
+                <a href="/"> <h2 class="titulo"> Início Promotora </h2> </a>
             </div>
         </div>
     </header>
@@ -42,6 +42,12 @@
                 
                 <!-- Corpo da página -->
                 <div class="offset-1 col-lg-8 col-md-8 col-sm-11 col-xs-11 text shadow-sm p-3 mb-5 bg-white rounded">
+                    <div class="row mb-3">
+                        <div class="col-12 text-center">
+                            <h5 class="titulo"> Estes são seus eventos <%= usuario.nome_entidade %>: </h5>
+                        </div>
+                    </div>
+
                     <div class="row">
                         <div class="offset-1 col-lg-5 col-md-5 col-sm-12 col-xs-12">
                             <div class="card" style="width: 18rem;">
