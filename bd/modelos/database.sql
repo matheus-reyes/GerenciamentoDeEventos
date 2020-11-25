@@ -165,8 +165,7 @@ create table INGRESSO (
      forma_pagamento varchar(255) not null,
      cpf bigint not null,
      id_evento int not null,
-     constraint ID_INGRESSO_ID primary key (numero_ingresso),
-     constraint SID_INGRE_Lote_ID unique (numero_lote));
+     constraint ID_INGRESSO_ID primary key (numero_ingresso));
 
 create table INSCREVE (
      codigo_atividade int not null,
@@ -1164,9 +1163,6 @@ create unique index ID_INGRESSO_IND
 
 create index EQU_INGRE_Parti_IND
      on INGRESSO (cpf);
-
-create unique index SID_INGRE_Lote_IND
-     on INGRESSO (numero_lote);
 
 create index REF_INGRE_Event_IND
      on INGRESSO (id_evento);
