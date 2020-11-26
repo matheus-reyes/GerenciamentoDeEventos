@@ -1,4 +1,4 @@
-const {Entidade, Participante} = require("../models");
+const {Entidade, Participante, Evento} = require("../models");
 const bcrypt = require("bcrypt");
 
 module.exports = {
@@ -32,8 +32,11 @@ module.exports = {
                 // Salva as Informações do usuário na session
                 req.session.usuario = participantes[i];
 
+                // Salva todos os eventos
+                const eventos = await Evento.findAll();
+
                 // Redireciona ao início do participante com seus dados
-                res.render("participante/inicio", {usuario:req.session.usuario});
+                res.render("participante/inicio", {usuario:req.session.usuario, eventos});
 
             }
         }
@@ -47,8 +50,11 @@ module.exports = {
                 // Salva as Informações do usuário na session
                 req.session.usuario = promotoras[i];
 
+                // Salva todos os eventos
+                const eventos = await Evento.findAll();
+
                 // Redireciona ao início do participante com seus dados
-                res.render("promotora/inicio", {usuario:req.session.usuario});
+                res.render("promotora/inicio", {usuario:req.session.usuario, eventos});
 
             }
         }

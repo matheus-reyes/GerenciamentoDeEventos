@@ -44,13 +44,13 @@
                 <div class="offset-1 col-lg-8 col-md-8 col-sm-11 col-xs-11 text shadow-sm p-3 mb-5 bg-white rounded">
                     <div class="row mb-3">
                         <div class="col-12 text-center">
-                            <h5 class="titulo"> Todos os Eventos </h5>
+                            <h5 class="titulo"> Seus Eventos </h5>
                         </div>
                     </div>
                     <div class="row">
                         <% if(eventos.length == 0){ %>
                             <div class="col-12 text-center">
-                                <p class="body-text-p">Não há nenhum evento disponível! </p>
+                                <p class="body-text-p"> Você ainda não se inscreveu em nenhum evento! </p>
                             </div>
                         <% } else { %>
                             <% for(evento of eventos) { %>
@@ -60,12 +60,6 @@
                                         <div class="card-body">
                                             <h5 class="card-title"> <%= evento.tema %> </h5>
                                             <p class="card-text"> <%= evento.nome %> </p>
-                                        </div>
-                                        <div class="card-body">
-                                            <form action="/inscricaoEvento" method="POST">
-                                                <input type="hidden" name="idEvento" value="<%= evento.id_evento %>">
-                                                <button type="submit" class="botaoForm">  Comprar Ingresso </button>
-                                            </form>
                                         </div>
                                     </div>
                                 </div>

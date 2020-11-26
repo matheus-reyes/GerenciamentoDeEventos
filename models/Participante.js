@@ -72,7 +72,7 @@ let Participante = (sequelize, Datatypes) => {
             models.Evento,
             {
                 foreignKey: 'cpf',
-                as: 'participante',
+                as: 'eventos',
                 through: models.Ingresso
             }
         );
