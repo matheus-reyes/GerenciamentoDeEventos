@@ -382,7 +382,8 @@ INSERT INTO palestrante (cpf, filiacao, minicurriculo) VALUES (43269456702, "FLY
 INSERT INTO palestrante (cpf, filiacao, minicurriculo) VALUES (43269456703, "FREG", "minicurriculo.pdf");
 INSERT INTO palestrante (cpf, filiacao, minicurriculo) VALUES (43269456704, "XIAM", "minicurriculo.pdf");
 INSERT INTO palestrante (cpf, filiacao, minicurriculo) VALUES (43269456705, "AMAZIN", "minicurriculo.pdf");
-
+INSERT INTO palestrante (cpf, filiacao, minicurriculo) VALUES (43269456725, "AMUZIN", "minicurriculo.pdf");
+UPDATE `eventos_cientificos`.`participante` SET `palestrante` = '1' WHERE (`cpf` = '43269456725');
 /* Inserção Dados Participante - Ouvinte e Instrutor */
 
 INSERT INTO participante (nome, cpf, cep, e_mail, senha, telefone, Staff, Palestrante, Ouvinte, Organizador, Ministrante_tutoria, Instrutor, Avaliador, Autor_Artigo) 
@@ -458,6 +459,8 @@ INSERT INTO ministrante_tutoria (cpf, afiliacao, minicurriculo) VALUES (43269456
 INSERT INTO ministrante_tutoria (cpf, afiliacao, minicurriculo) VALUES (43269456723, "DANFREX", "minicurriculo.pdf");
 INSERT INTO ministrante_tutoria (cpf, afiliacao, minicurriculo) VALUES (43269456724, "FETIZ", "minicurriculo.pdf");
 INSERT INTO ministrante_tutoria (cpf, afiliacao, minicurriculo) VALUES (43269456725, "XIETEX", "minicurriculo.pdf");
+INSERT INTO ministrante_tutoria (cpf, afiliacao, minicurriculo) VALUES (43269456705, "XIITEX", "minicurriculo.pdf");
+UPDATE `eventos_cientificos`.`participante` SET `Ministrante_tutoria` = '1' WHERE (`cpf` = '43269456705');
 
 /* Inserção Dados Participante - avaliador */
 
