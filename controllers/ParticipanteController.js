@@ -138,7 +138,23 @@ module.exports = {
 
     apagarParticipante: async (req,res) => {
 
+        const usuario = req.session.usuario;
 
+        //apaga os ingressos do Participante
+        await Ingresso.destroy({
+			where:{
+				cpf:usuario.cpf,
+			}
+        });
+
+        //apaga o participante
+        await Participante.destroy({
+			where:{
+				cpf:usuario.cpf,
+			}
+        });
+        
+        res.render("login");
 
     }
 
