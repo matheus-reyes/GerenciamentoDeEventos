@@ -38,11 +38,11 @@ INNER JOIN Local_presencial on FAZ_LOCACAO.id_local = Local_presencial.id_local
 INNER JOIN PATROCINA on PATROCINA.id_evento = evento.id_evento
 where Local_presencial.end_estado like '%Ceará%'
 GROUP BY PATROCINA.id_evento HAVING COUNT(*)<3;
- 
-/*
-Qual o nome completo e o cpf do participante que é um ministrante_tutoria, possui “Pereira” no seu nome e é também outro tipo de participante?
-*/
-select nome, cpf from participante
-where ministrante_tutoria = '1' and (Palestrante = '1' or staff = '1') and nome like '%Pereira%';
 
-select * from participante where Ministrante_tutoria = '1';
+/*
+Qual o nome completo e o cpf do participante que é um ministrante_tutoria, possui “Pereira” no seu nome e é também um palestrante?
+*/
+select ministrante.nome, ministrante.cpf from participante as ministrante
+INNER JOIN ministrante_tutoria on ministrante.cpf = ministrante_tutoria.cpf
+INNER JOIN palestrante on palestrante.cpf = ministrante.cpf
+where nome like '%Pereira%';
