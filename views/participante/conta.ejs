@@ -2,7 +2,7 @@
 <html lang="pt-br">
 
 <head>
-    <title> Gerenciador De Eventos </title>
+    <title> Eventos </title>
     <meta chartset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -18,84 +18,102 @@
     <header class="align-self-center shadow-sm p-3 mb-5 bg-white rounded">
         <div id="container" class="container">
             <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text">
-                    <h2 class="titulo"> Gerenciador De Eventos </h2>
-                </div>
+                <a href="/"> <h2 class="titulo"> Participante </h2> </a>
             </div>
         </div>
     </header>
     <!-- Main -->
     <main>
         <section>
-            <div class="container-fluid">
-                <div class="row justify-content-center">
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                        <h2 class="text-center titulo"> Editar Informações </h2>
-                        <!-- Formulário Editar Informações -->
-                        <form action="/editarParticipante" method="POST">
-                            <!-- Input Nome -->
-                            <div class="form-group row mb-0">
-                                <label for="nome" class="col-sm-12 col-form-label"></label>
-                                <div class="col-md-12">
-                                    <input type="text" class="form-control" id="nome" name="nome" value="<%= usuario.nome %>" placeholder="Digite seu nome" required>
-                                </div>
-                            </div>
-                            <!-- Input CPF -->
-                            <div class="form-group row mb-0">
-                                <label for="cpf" class="col-sm-12 col-form-label"></label>
-                                <div class="col-md-12">
-                                    <input type="text" class="form-control" id="cpf" name="cpf" value="<%= usuario.cpf %>" placeholder="Digite seu CPF" required>
-                                </div>
-                            </div>
-                            <!-- Input Telefone -->
-                            <div class="form-group row mb-0">
-                                <label for="telefone" class="col-sm-12 col-form-label"></label>
-                                <div class="col-md-12">
-                                    <input type="number" class="form-control" id="telefone" name="telefone" value="<%= usuario.telefone %>" placeholder="Digite seu telefone" required>
-                                </div>
-                            </div>
-                            <!-- Input CEP -->
-                            <div class="form-group row mb-0">
-                                <label for="cep" class="col-sm-12 col-form-label"></label>
-                                <div class="col-md-12">
-                                    <input type="number" class="form-control" id="cep" name="cep" value="<%= usuario.cep %>" placeholder="Digite seu CEP" required>
-                                </div>
-                            </div>
-                            <!-- Input E-mail -->
-                            <div class="form-group row mb-0">
-                                <label for="email" class="col-sm-12 col-form-label"></label>
-                                <div class="col-md-12">
-                                    <input type="email" class="form-control" id="email" name="email" value="<%= usuario.e_mail %>" placeholder="Digite seu e-mail" required>
-                                </div>
-                            </div>
-                            <!-- Input Senha -->
-                            <div class="form-group row mb-0">
-                                <label for="password" class="col-sm-12 col-form-label"></label>
-                                <div class="col-md-12">
-                                    <input type="password" class="form-control" id="password" name="password" placeholder="Digite sua nova senha">
-                                </div>
-                            </div>
-                            <!-- Input Confirmar Senha -->
-                            <div class="form-group row">
-                                <label for="confirmpassword" class="col-sm-12 col-form-label"></label>
-                                <div class="col-md-12">
-                                    <input type="password" class="form-control" id="confirmpassword" name="confirmpassword" placeholder="Confirme sua senha">
-                                </div>
-                            </div>
-                            <!-- Botão de Confirmar -->
-                            <div class="form-group row">
-                                <div class="col-md-12 text-center mb-2">
-                                    <button type="submit" class="btn w-100 botao"> Editar Informações </button>
-                                </div>
-                            </div>
-                        </form>
-                        <form action="/apagarParticipante" method="POST">
-                            <div class="col-md-12 text-center">
-                                <button type="submit" class="btn w-100 botao botaoVermelho"> Apagar Conta </button>
-                            </div>
-                        </form>
+            <div id="container" class="container-fluid">
+                <div class="row">
+
+                    <!-- Menu Lateral -->
+                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 text-center text shadow-sm p-3 mb-5 bg-white rounded">
+                        <div class="titulo mb-4">
+                            <a href="/todosEventosParticipante" class="text"> Todos os Eventos </a>
+                        </div>
+                        <div class="titulo mb-4">
+                            <a href="/eventosParticipante" class="text"> Seus Eventos </a>
+                        </div>
+                        <div class="titulo">
+                            <a href="/contaParticipante" class="text"> Minha Conta </a>
+                        </div>
                     </div>
-                </div>  
+
+
+                    <!-- Corpo da página -->
+                    <div class="offset-1 col-lg-8 col-md-8 col-sm-11 col-xs-11 text shadow-sm p-3 mb-5 bg-white rounded">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <h2 class="text-center titulo"> Editar Informações </h2>
+                                <!-- Formulário Editar Informações -->
+                                <form action="/editarParticipante" method="POST">
+                                    <!-- Input Nome -->
+                                    <div class="form-group row mb-0">
+                                        <label for="nome" class="col-sm-12 col-form-label"></label>
+                                        <div class="col-md-12">
+                                            <input type="text" class="form-control" id="nome" name="nome" value="<%= usuario.nome %>" placeholder="Digite seu nome" required>
+                                        </div>
+                                    </div>
+                                    <!-- Input CPF -->
+                                    <div class="form-group row mb-0">
+                                        <label for="cpf" class="col-sm-12 col-form-label"></label>
+                                        <div class="col-md-12">
+                                            <input type="text" class="form-control" id="cpf" name="cpf" value="<%= usuario.cpf %>" placeholder="Digite seu CPF" required>
+                                        </div>
+                                    </div>
+                                    <!-- Input Telefone -->
+                                    <div class="form-group row mb-0">
+                                        <label for="telefone" class="col-sm-12 col-form-label"></label>
+                                        <div class="col-md-12">
+                                            <input type="number" class="form-control" id="telefone" name="telefone" value="<%= usuario.telefone %>" placeholder="Digite seu telefone" required>
+                                        </div>
+                                    </div>
+                                    <!-- Input CEP -->
+                                    <div class="form-group row mb-0">
+                                        <label for="cep" class="col-sm-12 col-form-label"></label>
+                                        <div class="col-md-12">
+                                            <input type="number" class="form-control" id="cep" name="cep" value="<%= usuario.cep %>" placeholder="Digite seu CEP" required>
+                                        </div>
+                                    </div>
+                                    <!-- Input E-mail -->
+                                    <div class="form-group row mb-0">
+                                        <label for="email" class="col-sm-12 col-form-label"></label>
+                                        <div class="col-md-12">
+                                            <input type="email" class="form-control" id="email" name="email" value="<%= usuario.e_mail %>" placeholder="Digite seu e-mail" required>
+                                        </div>
+                                    </div>
+                                    <!-- Input Senha -->
+                                    <div class="form-group row mb-0">
+                                        <label for="password" class="col-sm-12 col-form-label"></label>
+                                        <div class="col-md-12">
+                                            <input type="password" class="form-control" id="password" name="password" placeholder="Digite sua nova senha">
+                                        </div>
+                                    </div>
+                                    <!-- Input Confirmar Senha -->
+                                    <div class="form-group row">
+                                        <label for="confirmpassword" class="col-sm-12 col-form-label"></label>
+                                        <div class="col-md-12">
+                                            <input type="password" class="form-control" id="confirmpassword" name="confirmpassword" placeholder="Confirme sua senha">
+                                        </div>
+                                    </div>
+                                    <!-- Botão de Confirmar -->
+                                    <div class="form-group row">
+                                        <div class="col-md-12 text-center mb-2">
+                                            <button type="submit" class="btn w-100 botao"> Editar Informações </button>
+                                        </div>
+                                    </div>
+                                </form>
+                                <form action="/apagarParticipante" method="POST">
+                                    <div class="col-md-12 text-center">
+                                        <button type="submit" class="btn w-100 botao botaoVermelho"> Apagar Conta </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
             </div>
         </section>
     </main>

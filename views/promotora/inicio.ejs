@@ -2,7 +2,7 @@
 <html lang="pt-br">
 
 <head>
-    <title> Gerenciador De Eventos </title>
+    <title> Eventos </title>
     <meta chartset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -18,7 +18,7 @@
     <header class="align-self-center shadow-sm p-3 mb-5 bg-white rounded">
         <div id="container" class="container">
             <div class="row">
-                <a href="/"> <h2 class="titulo"> Início Promotora </h2> </a>
+                <a href="/"> <h2 class="titulo"> Promotora </h2> </a>
             </div>
         </div>
     </header>
@@ -44,46 +44,116 @@
                 <div class="offset-1 col-lg-8 col-md-8 col-sm-11 col-xs-11 text shadow-sm p-3 mb-5 bg-white rounded">
                     <div class="row mb-3">
                         <div class="col-12 text-center">
-                            <h5 class="titulo"> Estes são seus eventos <%= usuario.nome_entidade %>: </h5>
+                            <h5 class="titulo"> Seus Eventos </h5>
                         </div>
                     </div>
-
                     <div class="row">
-                        <div class="offset-1 col-lg-5 col-md-5 col-sm-12 col-xs-12">
-                            <div class="card" style="width: 18rem;">
-                                <img class="card-img-top tamanho-imagem-card" src="images/evento2.jpg" alt="Card image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title"> Nome Evento </h5>
-                                    <p class="card-text"> Uma linda e belíssima descrição, feita por uma pessoa incrível e sem criatividade :).</p>
-                                </div>
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item"> Data Início - Data Fim </li>
-                                </ul>
-                                <div class="card-body">
-                                    <a href="#" class="card-link"> Detalhes </a>
-                                </div>
+                        <% if(eventos.length == 0){ %>
+                            <div class="col-12 text-center">
+                                <p class="body-text-p"> Você ainda não tem nenhum evento! </p>
                             </div>
-                        </div>
-    
-                        <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
-                            <div class="card" style="width: 18rem;">
-                                <img class="card-img-top tamanho-imagem-card" src="images/evento3.jpg" alt="Card image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title"> Nome Evento </h5>
-                                    <p class="card-text"> Uma linda e belíssima descrição, feita por uma pessoa incrível e sem criatividade :).</p>
+                        <% } else { %>
+                            <% for(evento of eventos) { %>
+                                <div class="offset-1 col-lg-5 col-md-5 col-sm-12 col-xs-12 mb-5">
+                                    <div class="card" style="width: 18rem;">
+                                        <img class="card-img-top tamanho-imagem-card" src="images/evento.jpg" alt="Card image cap">
+                                        <div class="card-body">
+                                            <h5 class="card-title"> <%= evento.tema %> </h5>
+                                            <p class="card-text"> <%= evento.nome %> </p>
+                                        </div>
+                                        <div class="card-body">
+                                            <a href="#" class="botaoForm" title="Settings" data-toggle="modal"
+                                            data-target="#modalEditarEvento<%=evento.id_evento%>"> Editar Evento </a>
+                                        </div>
+                                    </div>
                                 </div>
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item"> Data Início - Data Fim </li>
-                                </ul>
-                                <div class="card-body">
-                                    <a href="#" class="card-link"> Detalhes </a>
-                                </div>
-                            </div>
-                        </div>
+                            <% } %>
+                        <% } %>
                     </div>
                 </div>
             </div>
         </div>
+
+        <!-- Modais para Editar Evento -->
+        <section>
+            <% for(evento of eventos) { %>
+                <div id="modalEditarEvento<%=evento.id_evento%>" class="modal fade">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <!-- Titulo -->
+                            <div class="modal-header">
+                                <h4 class="modal-title titulo">Editar Evento</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                <strong> <bold>&times;</bold> </strong>
+                                </button>
+                            </div>
+                            <!-- Texto -->
+                            <div class="modal-body">
+                                <!-- Formulário Editar Evento -->
+                                <form action="/editarEvento" method="POST">
+                                    <!-- Input Nome -->
+                                    <div class="form-group row mb-0">
+                                        <label for="nome" class="col-sm-12 col-form-label"></label>
+                                        <div class="col-md-12">
+                                            <input type="text" class="form-control" id="nome" name="nome" value="<%=evento.nome%>" placeholder="Digite o nome do evento">
+                                        </div>
+                                    </div>
+                                    <!-- Input Tema -->
+                                    <div class="form-group row mb-0">
+                                        <label for="tema" class="col-sm-12 col-form-label"></label>
+                                        <div class="col-md-12">
+                                            <input type="text" class="form-control" id="tema" name="tema" value="<%=evento.tema%>" placeholder="Digite o tema do evento">
+                                        </div>
+                                    </div>
+                                    <!-- Input Edição -->
+                                    <div class="form-group row mb-0">
+                                        <label for="edicao" class="col-sm-12 col-form-label"></label>
+                                        <div class="col-md-12">
+                                            <input type="text" class="form-control" id="edicao" name="edicao" value="<%=evento.edicao%>" placeholder="Digite a edição do evento">
+                                        </div>
+                                    </div>
+                                    <!-- Input data início -->
+                                    <div class="form-group row mb-0">
+                                        <label for="dataInicio" class="col-sm-12 col-form-label"></label>
+                                        <div class="col-md-12">
+                                            <input type="text" class="form-control" id="dataInicio" name="data_inicio" value="<%=evento.data_inicio%>" placeholder="Digite a de data início: aaaa-mm-dd">
+                                        </div>
+                                    </div>
+                                    <!-- Input data fim -->
+                                    <div class="form-group row mb-0">
+                                        <label for="dataFim" class="col-sm-12 col-form-label"></label>
+                                        <div class="col-md-12">
+                                            <input type="text" class="form-control" id="dataFim" name="data_fim" value="<%=evento.data_fim%>" placeholder="Digite a data de fim: aaaa-mm-dd">
+                                        </div>
+                                    </div>
+                                    <!-- Input CNPJ Organizadora -->
+                                    <div class="form-group row mb-3">
+                                        <label for="cnpjOrganizadora" class="col-sm-12 col-form-label"></label>
+                                        <div class="col-md-12">
+                                            <input type="text" class="form-control" id="cnpjOrganizadora" name="cnpj" value="<%=evento.cnpj%>" placeholder="Digite o CNPJ da Organizadora">
+                                        </div>
+                                    </div>
+                                    <!-- Botão para confirmar  -->
+                                    <div class="form-group row">
+                                        <div class="col-md-12 text-center">
+                                            <button type="submit" class="btn w-100 botao"> Editar Evento </button>
+                                        </div>
+                                    </div>
+                                </form>
+                                <!-- Botão para apagar evento -->
+                                <form action="/apagarEvento" method="POST">
+                                    <div class="col-md-12 text-center">
+                                        <input type="hidden" value="<%=evento.id_evento%>" name="id_evento">
+                                        <button type="submit" class="btn w-100 botao botaoVermelho"> Apagar Evento </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <% } %>
+        </section>
+
     </main>
     <script type="text/javascript" src="javascripts/jquery.js"></script>
     <script type="text/javascript" src="javascripts/bootstrap.js"></script>

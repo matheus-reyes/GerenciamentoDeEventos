@@ -50,8 +50,12 @@ module.exports = {
                 // Salva as Informações do usuário na session
                 req.session.usuario = promotoras[i];
 
-                // Salva todos os eventos
-                const eventos = await Evento.findAll();
+                //Dados dos eventos da promotora
+                const eventos = await Evento.findAll({
+                    where: {
+                        PRO_cnpj:promotoras[i].cnpj
+                    }
+                });
 
                 // Redireciona ao início do participante com seus dados
                 res.render("promotora/inicio", {usuario:req.session.usuario, eventos});
