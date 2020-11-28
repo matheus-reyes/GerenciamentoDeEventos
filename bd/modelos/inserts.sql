@@ -374,7 +374,8 @@ INSERT INTO participante (nome, cpf, cep, e_mail, senha, telefone, Staff, Palest
 VALUES ("Luciana Karmizec", 39720465821, 01679001, "karmizec@usp.br", "$2b$10$TM0wdHsCY4xZIe1BH/Jp0uny9Kr7Sv461myqmcaalJY8CEi0XOg.i", 945459966, false, true, true, false, false, false, false, false);
 INSERT INTO participante (nome, cpf, cep, e_mail, senha, telefone, Staff, Palestrante, Ouvinte, Organizador, Ministrante_tutoria, Instrutor, Avaliador, Autor_Artigo) 
 VALUES ("Fernando Alburqueque", 29169407291, 01027001, "fernando.alburqueque@usp.br", "$2b$10$TM0wdHsCY4xZIe1BH/Jp0uny9Kr7Sv461myqmcaalJY8CEi0XOg.i", 997246684, false, true, true, false, false, false, false, false);
-
+INSERT INTO participante (nome, cpf, cep, e_mail, senha, telefone, Staff, Palestrante, Ouvinte, Organizador, Ministrante_tutoria, Instrutor, Avaliador, Autor_Artigo) 
+VALUES ("Fagner Pereira", 43269456725, 34504255, "fagner@contato.com", "$2b$10$TM0wdHsCY4xZIe1BH/Jp0uny9Kr7Sv461myqmcaalJY8CEi0XOg.i", 458490955, false, true, false, false, true, false, false, false);
 /* Inserção Dados Palestrante */
 
 INSERT INTO palestrante (cpf, filiacao, minicurriculo) VALUES (43269456701, "DEFREX", "minicurriculo.pdf");
@@ -383,7 +384,7 @@ INSERT INTO palestrante (cpf, filiacao, minicurriculo) VALUES (43269456703, "FRE
 INSERT INTO palestrante (cpf, filiacao, minicurriculo) VALUES (43269456704, "XIAM", "minicurriculo.pdf");
 INSERT INTO palestrante (cpf, filiacao, minicurriculo) VALUES (43269456705, "AMAZIN", "minicurriculo.pdf");
 INSERT INTO palestrante (cpf, filiacao, minicurriculo) VALUES (43269456725, "AMUZIN", "minicurriculo.pdf");
-UPDATE `eventos_cientificos`.`participante` SET `palestrante` = '1' WHERE (`cpf` = '43269456725');
+
 /* Inserção Dados Participante - Ouvinte e Instrutor */
 
 INSERT INTO participante (nome, cpf, cep, e_mail, senha, telefone, Staff, Palestrante, Ouvinte, Organizador, Ministrante_tutoria, Instrutor, Avaliador, Autor_Artigo) 
@@ -449,8 +450,7 @@ INSERT INTO participante (nome, cpf, cep, e_mail, senha, telefone, Staff, Palest
 VALUES ("Fernanda Felix", 43269456723, 34504253, "fernanda@contato.com", "$2b$10$TM0wdHsCY4xZIe1BH/Jp0uny9Kr7Sv461myqmcaalJY8CEi0XOg.i", 458490953, false, false, false, false, true, false, false, false);
 INSERT INTO participante (nome, cpf, cep, e_mail, senha, telefone, Staff, Palestrante, Ouvinte, Organizador, Ministrante_tutoria, Instrutor, Avaliador, Autor_Artigo) 
 VALUES ("Fátima Silva", 43269456724, 34504254, "fátima@contato.com", "$2b$10$TM0wdHsCY4xZIe1BH/Jp0uny9Kr7Sv461myqmcaalJY8CEi0XOg.i", 458490954, false, false, false, false, true, false, false, false);
-INSERT INTO participante (nome, cpf, cep, e_mail, senha, telefone, Staff, Palestrante, Ouvinte, Organizador, Ministrante_tutoria, Instrutor, Avaliador, Autor_Artigo) 
-VALUES ("Fagner Pereira", 43269456725, 34504255, "fagner@contato.com", "$2b$10$TM0wdHsCY4xZIe1BH/Jp0uny9Kr7Sv461myqmcaalJY8CEi0XOg.i", 458490955, false, false, false, false, true, false, false, false);
+
 
 /* Inserção Dados Ministrante_Tutoria */
 
@@ -460,7 +460,7 @@ INSERT INTO ministrante_tutoria (cpf, afiliacao, minicurriculo) VALUES (43269456
 INSERT INTO ministrante_tutoria (cpf, afiliacao, minicurriculo) VALUES (43269456724, "FETIZ", "minicurriculo.pdf");
 INSERT INTO ministrante_tutoria (cpf, afiliacao, minicurriculo) VALUES (43269456725, "XIETEX", "minicurriculo.pdf");
 INSERT INTO ministrante_tutoria (cpf, afiliacao, minicurriculo) VALUES (43269456705, "XIITEX", "minicurriculo.pdf");
-UPDATE `eventos_cientificos`.`participante` SET `Ministrante_tutoria` = '1' WHERE (`cpf` = '43269456705');
+UPDATE participante SET Ministrante_tutoria = 1 WHERE (cpf = 43269456705);
 
 /* Inserção Dados Participante - avaliador */
 
