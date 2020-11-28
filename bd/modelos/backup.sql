@@ -1,3 +1,5 @@
+CREATE DATABASE  IF NOT EXISTS `eventos_cientificos` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+USE `eventos_cientificos`;
 -- MySQL dump 10.13  Distrib 8.0.19, for Win64 (x86_64)
 --
 -- Host: localhost    Database: eventos_cientificos
@@ -650,9 +652,8 @@ CREATE TABLE `ingresso` (
   `cpf` bigint NOT NULL,
   `id_evento` int NOT NULL,
   PRIMARY KEY (`numero_ingresso`),
-  UNIQUE KEY `SID_INGRE_Lote_ID` (`numero_lote`),
   UNIQUE KEY `ID_INGRESSO_IND` (`numero_ingresso`),
-  UNIQUE KEY `SID_INGRE_Lote_IND` (`numero_lote`),
+  KEY `SID_INGRE_Lote_FK` (`numero_lote`),
   KEY `EQU_INGRE_Parti_IND` (`cpf`),
   KEY `REF_INGRE_Event_IND` (`id_evento`),
   CONSTRAINT `EQU_INGRE_Parti_FK` FOREIGN KEY (`cpf`) REFERENCES `participante` (`cpf`),
@@ -1874,4 +1875,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-11-27 17:15:36
+-- Dump completed on 2020-11-28 15:53:18
