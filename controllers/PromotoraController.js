@@ -49,7 +49,7 @@ module.exports = {
         const edicao = req.body.edicao;
         const data_inicio = req.body.data_inicio;
         const data_fim = req.body.data_fim;
-        const cnpj = req.body.cnpj;
+        const cnpj = '7755256000158';
 
         //Insere os dados na tabela Ingresso
         await Evento.create({
@@ -83,7 +83,6 @@ module.exports = {
         const edicao = req.body.edicao;
         const data_inicio = req.body.data_inicio;
         const data_fim = req.body.data_fim;
-        const cnpj = req.body.cnpj;
 
         //Faz a alteração do evento
         await Evento.update({
@@ -91,8 +90,7 @@ module.exports = {
             tema,
             edicao,
             data_inicio,
-            data_fim,
-            cnpj
+            data_fim
         },
         {
             where:{
