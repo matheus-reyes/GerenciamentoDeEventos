@@ -24,9 +24,9 @@ AND numero_lote IN (1,2);
 Consulta 3
 Uma das empresas organizadoras está passando por uma grave crise financeira e não conseguiu patrocínio para a maioria dos eventos realizados. Por 
 isso, decidiu reduzir os custos com a folha de pagamento, definindo os seguintes critérios de seleção para as primeiras demissões: organizadores 
-que não coordenam nenhum mobilizador de caravana, possuem tempo de contrato menor que 6 meses e possuem remuneração a partir de R$700,00.
+que não coordenam nenhum mobilizador de caravana, possuem tempo de contrato menor que 6 meses e possuem remuneração a partir de R$720,00.
 
-Qual o cpf e o nome dos Organizadores que não coordenam nenhum mobilizador de caravana, possuem 
+Qual o cpf dos Organizadores que não coordenam nenhum mobilizador de caravana, possuem 
 tempo de contrato menor do que 6 meses e possuem remuneração maior do que 720,00.
 */
 SELECT DISTINCT organizador.cpf FROM organizador
