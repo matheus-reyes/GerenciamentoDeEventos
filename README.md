@@ -34,6 +34,6 @@ Foram formulados 6 enunciados de uma consulta e a implementação da mesma em SQ
 ## F) Implementação de sistema com interface gráfica ou textual
 Para este passo, optou-se pela abordagem web, utilizando as tecnologias HTML, CSS, Node.Js e Express.js para criar um sistema CRUD, possibilitando o cadastro, alteração e exclusão de informações. 
 
-### Para acessar o sistema Web basta seguir os passos a seguir:
+### Para acessar o sistema Web basta seguir o link a seguir:
 https://gerenciamentodeeventos.herokuapp.com/
 
