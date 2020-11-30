@@ -20,10 +20,15 @@ Foi utilizado o script SQL gerado pelo DB-Main para que todo o sistema seja coes
 Foram formulados 6 enunciados de uma consulta e a implementação da mesma em SQL seguindo as exigências da docente. São eles:
 
 **1. Uso do comando LIKE como forma de busca de informação em campos do tipo texto.**
+
 **2. Uso de comandos de pertinência a conjuntos (IN ou ALL).**
+
 **3. Uso de junção externa (RIGHT ou LEFT).**
+
 **4. Uso da cláusula HAVING.**
+
 **5. Usando QUATRO RELAÇÕES diferentes do modelo do banco de dados.**
+
 **6. Usando ao menos UMA RELAÇÃO com DOIS PAPÉIS diferentes.**
 
 ## F) Implementação de sistema com interface gráfica ou textual
